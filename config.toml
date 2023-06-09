@@ -16,22 +16,6 @@ build_search_index = false
 highlight_code = false
 
 [extra]
-# Put all your custom variables here
-
-# [extra.sponsors]
-
-    # [extra.sponsors.simpeg]
-    # image = "simpeg.png"
-    # alt_text = "SimPEG"
-    #
-    # [extra.sponsors.other1]
-    # image = "simpeg.png"
-    # alt_text = "Other1"
-    #
-    # [extra.sponsors.other2]
-    # image = "simpeg.png"
-    # alt_text = "Other2"
-
 sponsors = [
     {image="simpeg.png", alt_text="SimPEG", url="https://www.simpeg.xyz"},
     {image="simpeg.png", alt_text="Other1", url="https://duckduckgo.com/"},
