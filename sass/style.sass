@@ -1,0 +1,55 @@
+// Default font sizes for Bootstrap
+$font-size-base:              1rem // Assumes the browser default, typically `16px`
+$h1-font-size:                $font-size-base * 2.5
+$h2-font-size:                $font-size-base * 2
+$h3-font-size:                $font-size-base * 1.75
+$h4-font-size:                $font-size-base * 1.5
+$h5-font-size:                $font-size-base * 1.25
+$h6-font-size:                $font-size-base
+
+// :root:not([data-bs-theme=light])
+//   --bs-body-color: red
+//
+// :root:not([data-bs-theme=dark])
+//   --bs-body-color: blue
+//
+
+
+header.home
+  height: 100vh
+
+  .banner
+    height: 100%
+    padding-bottom: 10rem
+    text-align: center
+
+    h1
+      font-size: calc(1.2 * $h1-font-size)
+    h2
+      font-size: calc(1.2 * $h2-font-size)
+
+main.home
+  section
+    padding-top: 2rem
+    padding-bottom: 2rem
+
+  h2
+    text-align: center
+    border-bottom: solid 1px var(--bs-tertiary-color)
+    padding-bottom: 1rem
+
+  img.sponsor
+    width: 100%
+    height: auto
+
+a
+  text-decoration: none
+
+footer
+  margin-top: 2rem
+  padding-top: 3rem
+  padding-bottom: 2rem
+  font-size: calc(0.9 * $font-size-base)
+  color: var(--bs-secondary-color)
+  border-top: solid 1px var(--bs-tertiary-bg)
+
