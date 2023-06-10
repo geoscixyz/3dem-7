@@ -1,4 +1,5 @@
 {% set home = get_section(path="_index.md") %}
+
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ home.permalink | safe }}">{{ config.title }}</a>
@@ -19,6 +20,9 @@
           <a class="nav-link" href="{{ page.permalink | safe }}">{{ page.title }}</a>
         {% endfor %}
       </div>
+      <button class="btn ms-auto" id="themeSwitcher" title="Toggle theme (auto)" aria="Toggle theme">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
     </div>
   </div>
 </nav>
