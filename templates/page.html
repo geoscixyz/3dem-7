@@ -3,9 +3,12 @@
 {% block content %}
   {% include "navbar.html" %}
 
+  <main class="container">
+
   {{ page.content | safe }}
 
-  {% include "footer.html" %}
+  </main>
 
+  {% include "footer.html" %}
 {% endblock %}
 
