@@ -7,6 +7,13 @@ $h4-font-size:                $font-size-base * 1.5
 $h5-font-size:                $font-size-base * 1.25
 $h6-font-size:                $font-size-base
 
+// Custom colors
+$blue: #20567a
+$white: #f3f3f3
+
+// Extra fonts
+@import url("/fonts/Montserrat/fonts/webfonts/Montserrat.css")
+
 // :root:not([data-bs-theme=light])
 //   --bs-body-color: red
 //
@@ -14,9 +21,21 @@ $h6-font-size:                $font-size-base
 //   --bs-body-color: blue
 //
 
+.navbar
+  background-color: $blue
+  .nav-link
+    color: $white
+    border-bottom: solid 2px transparent
+    font-size: 1.2rem
+  .nav-link:hover
+    color: #ffffff
+    border-bottom: solid 2px #ffffff
 
 header.home
   height: 100vh
+
+  background-color: $blue
+  color: $white
 
   .banner
     height: 100%
@@ -55,3 +74,6 @@ footer
 
 h1
   text-align: center
+
+h1, h2, h3, h4, h5
+  font-family: 'Montserrat', sans-serif
