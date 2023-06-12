@@ -1,3 +1,5 @@
+@use "sass:color"
+
 // Default font sizes for Bootstrap
 $font-size-base:              1rem // Assumes the browser default, typically `16px`
 $h1-font-size:                $font-size-base * 2.5
@@ -9,11 +11,13 @@ $h6-font-size:                $font-size-base
 
 // Custom colors
 $blue: #20567a
+$light-blue: #7bb9e2
 $white: #f3f3f3
 
 // Override bootstrap colors
 :root
   --bs-body-color: var(--bs-gray-700)
+  --blue: #20567a
 
 // Extra fonts
 @import url("/fonts/Montserrat/fonts/webfonts/Montserrat.css")
@@ -69,8 +73,11 @@ header.home
   .downward-link
     text-align: center
     font-size: $h2-font-size
-    color: $white
+    color: $light-blue
     padding-bottom: 1rem
+
+  .downward-link:hover
+    color: $white
 
 
 main.home
@@ -80,8 +87,11 @@ main.home
 
   h2
     text-align: center
-    border-bottom: solid 1px var(--bs-tertiary-color)
-    padding-bottom: 1rem
+    padding-bottom: 1.5rem
+    font-size: calc(1.1 * $h2-font-size)
+
+  h3
+    padding-bottom: 0.7rem
 
   img.sponsor
     width: 100%
@@ -90,16 +100,30 @@ main.home
   p
     font-size: $h5-font-size
 
+  section
+    padding-top: 8rem
+
+  .background-1
+    background-color: $blue
+    color: $white
+
+  .padding-top-bottom
+    padding-top: 4rem
+    padding-bottom: 4rem
+
 a
   text-decoration: none
 
 footer
-  margin-top: 2rem
   padding-top: 3rem
   padding-bottom: 2rem
   font-size: calc(0.9 * $font-size-base)
-  color: var(--bs-secondary-color)
-  border-top: solid 1px var(--bs-tertiary-bg)
+  background-color: $blue
+  color: $white
+
+  a
+    color: $white
+    font-weight: bold
 
 h1
   text-align: center

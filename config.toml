@@ -17,6 +17,7 @@ highlight_code = false
 
 [extra]
 
+# Additional information about the workshop
 sponsors = [
     {image="simpeg.png", alt_text="SimPEG", url="https://www.simpeg.xyz"},
     {image="simpeg.png", alt_text="Other1", url="https://duckduckgo.com/"},
@@ -25,6 +26,7 @@ sponsors = [
 
 navlinks = [
     {name="Registration", url="/#registration"},
+    {name="Call for Abstracts", url="/#abstracts-call"},
     {name="Previous editions", url="https://www.gwhohmann.org/", external=true},
 ]
 

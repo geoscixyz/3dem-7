@@ -1,6 +1,6 @@
 +++
-title = "Schedule"
+title = "Program"
 template = "page.html"
 +++
 
-# Schedule
+# Program

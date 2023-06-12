@@ -17,87 +17,106 @@
     </div>
   </header>
 
-  <main class="home container">
+  <main class="home">
 
     {% set_global splits = section.content | split(pat="======") %}
     {% set_global about = splits.0 %}
     {% set_global registration = splits.1 %}
+    {% set_global call_abstracts = splits.2 %}
 
     <section id="about">
-      <h2>About</h2>
-      {{ about | safe }}
+      <div class="container">
+        <div class="row me-auto ms-auto justify-content-evenly">
+          <div class="col-4 text-end">
+          <h2 class="text-end" style="padding-bottom: 0">3DEM 7th Edition</h2>
+          <p>Nov 13 - 15, 2023<br>Vancouver, BC</p>
+          </div>
+          <div class="col-6">
+            {{ about | safe }}
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="registration">
-      <h2>Registration</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-6 col-sm-12">
-        {{ registration | safe }}
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Registration type</th>
-                <th scope="col">Fee (CAD)</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for registration in config.extra.registrations %}
-              <tr>
-                <td>{{ registration.type }}</td>
-                <td>{{ registration.fee }}</td>
-              </tr>
-              {% endfor %}
-            </tbody>
-          </table>
+      <div class="container">
+        <h2>Registration</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-sm-12">
+          {{ registration | safe }}
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Registration type</th>
+                  <th scope="col">Fee (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for registration in config.extra.registrations %}
+                <tr>
+                  <td>{{ registration.type }}</td>
+                  <td>{{ registration.fee }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="abstracts-call">
-      <h2>Call for abstracts</h2>
-    </section>
-
-    <section id="sponsors">
-      <h2>Sponsors</h2>
-      <div class="row">
-        {% for sponsor in config.extra.sponsors %}
-        <div class="col">
-          <a href="{{ sponsor.url }}">
-          <img
-            class="sponsor"
-            src="{{ get_url(path="/images/" ~ sponsor.image) }}"
-            alt="{{ sponsor.alt_text }}">
-          </a>
-        </div>
-        {% endfor %}
+      <div class="container">
+        <h2>Call for abstracts</h2>
+        {{ call_abstracts | safe }}
       </div>
     </section>
 
-    <section id="information">
-      <h2>Information</h2>
-      <div class="row row-gap-4">
-        <div class="col-lg-5 text-center">
-          <div class="d-flex h-100 flex-column justify-content-evenly row-gap-4">
-            <div>
-              <h3><i class="fa-solid fa-calendar"></i> When?</h3>
-              <p>{{ config.extra.when }}</p>
-            </div>
-            <div>
-              <h3><i class="fa-solid fa-location-dot"></i> Where?</h3>
-              <p>
-              {% for line in config.extra.where %}
-              {{ line }}<br>
-              {% endfor %}
-              </p>
+    <section id="sponsors">
+      <div class="container">
+        <h2>Sponsors</h2>
+        <div class="row">
+          {% for sponsor in config.extra.sponsors %}
+          <div class="col">
+            <a href="{{ sponsor.url }}">
+            <img
+              class="sponsor"
+              src="{{ get_url(path="/images/" ~ sponsor.image) }}"
+              alt="{{ sponsor.alt_text }}">
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="background-1 padding-top-bottom" id="information">
+      <div class="container">
+        <h2>Information</h2>
+        <div class="row row-gap-4">
+          <div class="col-lg-5 text-center">
+            <div class="d-flex h-100 flex-column justify-content-evenly row-gap-4">
+              <div>
+                <h3><i class="fa-solid fa-calendar"></i> When?</h3>
+                <p>{{ config.extra.when }}</p>
+              </div>
+              <div>
+                <h3><i class="fa-solid fa-location-dot"></i> Where?</h3>
+                <p>
+                {% for line in config.extra.where %}
+                {{ line }}<br>
+                {% endfor %}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-7">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1003.8736146863226!2d-123.25133222548347!3d49.26264377280987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672ca12ae4b37%3A0x3b7384303e09af9b!2sEarth%20Sciences%20Building!5e0!3m2!1sen!2sca!4v1686346218679!5m2!1sen!2sca"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="col-lg-7">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1003.8736146863226!2d-123.25133222548347!3d49.26264377280987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672ca12ae4b37%3A0x3b7384303e09af9b!2sEarth%20Sciences%20Building!5e0!3m2!1sen!2sca!4v1686346218679!5m2!1sen!2sca"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </section>

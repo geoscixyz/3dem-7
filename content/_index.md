@@ -15,7 +15,13 @@ and enjoy Vancouver.
 
 <!-- Registration  -->
 
-Comming soon
+Coming soon...
+
+======
+
+<!-- Call for abstracts  -->
+
+Coming soon...
 
 ======
 

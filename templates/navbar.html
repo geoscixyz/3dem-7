@@ -16,6 +16,11 @@
     <div class="collapse navbar-collapse container" id="navbarNavAltMarkup">
       <div class="navbar-nav justify-content-around align-center w-100">
         <a class="nav-link" href="{{ home.permalink | safe }}">Home</a>
+        {% for link in config.extra.navlinks %}
+          {% if not link.external %}
+            <a class="nav-link" href="{{ link.url | safe }}">{{ link.name }}</a>
+          {% endif %}
+        {% endfor %}
         {% for page in home.pages %}
           <a class="nav-link" href="{{ page.permalink | safe }}">{{ page.title }}</a>
         {% endfor %}
@@ -25,8 +30,6 @@
               {{ link.name }}
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
-          {% else %}
-            <a class="nav-link" href="{{ link.url | safe }}">{{ link.name }}</a>
           {% endif %}
         {% endfor %}
       </div>
