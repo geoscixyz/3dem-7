@@ -16,8 +16,27 @@ build_search_index = false
 highlight_code = false
 
 [extra]
+
 sponsors = [
     {image="simpeg.png", alt_text="SimPEG", url="https://www.simpeg.xyz"},
     {image="simpeg.png", alt_text="Other1", url="https://duckduckgo.com/"},
     {image="simpeg.png", alt_text="Other2", url="https://duckduckgo.com/"},
+]
+
+navlinks = [
+    {name="Registration", url="/#registration"},
+    {name="Previous editions", url="https://www.gwhohmann.org/", external=true},
+]
+
+when = "November 13th to 15th, 2023"
+where = [
+    "Earth, Ocean and Atmospheric Sciences",
+    "University of British Columbia",
+    "2207 Main Mall, Vancouver, BC",
+]
+
+registrations = [
+    {type="Early bird", fee="XX"},
+    {type="Regular", fee="XX"},
+    {type="Student", fee="XX"},
 ]
