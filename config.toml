@@ -45,3 +45,23 @@ registrations = [
     {type="Regular", fee="XX"},
     {type="Student", fee="XX"},
 ]
+
+# Texts in home sections (Markdown is supported)
+# ----------------------------------------------
+about = """
+Greetings, members of the 3DEM community! The 3DEM-7 Symposium is hapenning in
+Vancouver this year. A great opportunity to share
+new developments and applications in 3DEM, see old friends and make new ones,
+and enjoy Vancouver.
+"""
+
+registration = """
+Coming soon...
+"""
+
+abstracts_call = """
+Coming soon...
+
+- one
+- two
+"""

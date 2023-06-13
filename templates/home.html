@@ -19,11 +19,6 @@
 
   <main class="home">
 
-    {% set_global splits = section.content | split(pat="======") %}
-    {% set_global about = splits.0 %}
-    {% set_global registration = splits.1 %}
-    {% set_global call_abstracts = splits.2 %}
-
     <section id="about">
       <div class="container">
         <div class="row me-auto ms-auto justify-content-evenly">
@@ -38,7 +33,7 @@
           </p>
           </div>
           <div class="col-6">
-            {{ about | safe }}
+            {{ config.extra.about | markdown(inline=false) | safe }}
           </div>
         </div>
       </div>
@@ -49,7 +44,7 @@
         <h2>Registration</h2>
         <div class="row justify-content-center">
           <div class="col-lg-6 col-sm-12">
-          {{ registration | safe }}
+          {{ config.extra.registration | markdown(inline=false) | safe }}
           </div>
           <div class="col-lg-6 col-sm-12">
             <table class="table">
@@ -76,7 +71,7 @@
     <section id="abstracts-call">
       <div class="container">
         <h2>Call for abstracts</h2>
-        {{ call_abstracts | safe }}
+        {{ config.extra.abstracts_call | markdown(inline=false) | safe }}
       </div>
     </section>
 
