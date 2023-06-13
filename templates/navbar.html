@@ -18,7 +18,7 @@
         <a class="nav-link" href="{{ home.permalink | safe }}">Home</a>
         {% for link in config.extra.navlinks %}
           {% if not link.external %}
-            <a class="nav-link" href="{{ link.url | safe }}">{{ link.name }}</a>
+            <a class="nav-link" href="{{ config.base_url ~ link.url }}">{{ link.name }}</a>
           {% endif %}
         {% endfor %}
         {% for page in home.pages %}
