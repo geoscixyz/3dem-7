@@ -29,7 +29,13 @@
         <div class="row me-auto ms-auto justify-content-evenly">
           <div class="col-4 text-end">
           <h2 class="text-end" style="padding-bottom: 0">3DEM 7th Edition</h2>
-          <p class="montserrat">Nov 13 - 15, 2023<br>Vancouver, BC</p>
+          <p class="montserrat">
+            {{ config.extra.when.from | date(format="%b %e") }}
+            -
+            {{ config.extra.when.to | date(format="%e, %Y") }}
+            <br>
+            {{ config.extra.where | last | split(pat=",")  | slice(start=1, end=3) | join(sep=", ")}}
+          </p>
           </div>
           <div class="col-6">
             {{ about | safe }}
@@ -100,11 +106,15 @@
             <div class="d-flex h-100 flex-column justify-content-evenly row-gap-4">
               <div>
                 <h3><i class="fa-solid fa-calendar"></i> When?</h3>
-                <p>{{ config.extra.when }}</p>
+                <p class="montserrat">
+                  {{ config.extra.when.from | date(format="%B %e") }}
+                  to
+                  {{ config.extra.when.to | date(format="%e, %Y") }}
+                </p>
               </div>
               <div>
                 <h3><i class="fa-solid fa-location-dot"></i> Where?</h3>
-                <p>
+                <p class="montserrat">
                 {% for line in config.extra.where %}
                 {{ line }}<br>
                 {% endfor %}
