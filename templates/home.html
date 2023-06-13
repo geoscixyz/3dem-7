@@ -22,7 +22,7 @@
     <section id="about">
       <div class="container">
         <div class="row me-auto ms-auto justify-content-evenly">
-          <div class="col-4 text-end">
+          <div class="col-12 col-md-4 text-end">
           <h2 class="text-end" style="padding-bottom: 0">3DEM 7th Edition</h2>
           <p class="montserrat">
             {{ config.extra.when.from | date(format="%b %e") }}
@@ -32,7 +32,7 @@
             {{ config.extra.where | last | split(pat=",")  | slice(start=1, end=3) | join(sep=", ")}}
           </p>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             {{ config.extra.about | markdown(inline=false) | safe }}
           </div>
         </div>
