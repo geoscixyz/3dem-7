@@ -34,8 +34,14 @@ where = [
 
 # Sponsors
 sponsors = [
-    {image="simpeg.png", alt_text="SimPEG", url="https://www.simpeg.xyz"},
-    {image="simpeg.png", alt_text="Other1", url="https://duckduckgo.com/"},
+]
+
+# Organizers
+organizers = [
+    {image="hwt.jpg", alt_text="Hohmann-Wannamaker Trust", url="https://www.gwhohmann.org/"},
+    {image="gif.png", alt_text="Geophysical Inversion Facility", url="https://gif.eos.ubc.ca/"},
+    {image="ubc.png", alt_text="University of British Columbia", url="https://www.eoas.ubc.ca/"},
+    {image="bcgs.jpg", alt_text="BC Geophysical Society", url="http://www.bcgsonline.org/"},
 ]
 
 # Registration fees
@@ -46,8 +52,6 @@ registrations = [
     {type="Student / postdoc", fee="$100"},
 ]
 
-# Abstract deadline
-abstracts = {deadline="2023-09-04", url="https://duckduckgo.com/"}
 
 # Texts in home sections (Markdown is supported)
 # ----------------------------------------------
@@ -66,8 +70,8 @@ Registration link coming soon...
 abstracts_call = """
 Abstracts are due September 4, 2023.
 
-Please use the [template provided](assets/3DEM-latex-template.zip) and name your abstract using the convention `LastName2023-3DEM7.pdf`.
-We recommend a 2 page abstract, however there is no hard limit and longer / shorter abstracts are accepted.
+Please use the [template provided](https://github.com/geoscixyz/3dem-7/raw/ljh-revisions/assets/3DEM-latex-template.zip) and name your abstract using the convention `LastName2023-3DEM7.pdf`.
+We recommend a 4 page abstract, however there is no hard limit and longer / shorter abstracts are accepted.
 
 Submit your abstract by email to [3delectromagnetics@gmail.com](mailto:3delectromagnetics@gmail.com).
 In your email, please specify if you have a preference for a talk or poster.
@@ -81,4 +85,8 @@ Research in Electromagnetic Geophysics, following the tragic death of
 trustee Phil Wannamaker on August 22. 3DEM-7 will be
 dedicated to honoring Phil’s legacy in the worldwide EM community as a
 scientist, educator, colleague, and friend.
+"""
+
+sponsor_about = """
+Please reach out to `lheagy@eoas.ubc.ca` and `ehaber@eoas.ubc.ca` if you are interested in sponsoring 3DEM-7.
 """

@@ -82,9 +82,9 @@
         <div class="row me-auto ms-auto justify-content-evenly">
           <div class="col-12 col-md-4 text-end">
             <h4 class="montserrat">
-              due: September 4, 2023
+              Due: September 4, 2023
               <br><br>
-              <a href="">template</a>
+              <a href="https://github.com/geoscixyz/3dem-7/raw/ljh-revisions/assets/3DEM-latex-template.zip">3DEM-7 Template</a>
               </h4>
           </div>
           <div class="col-12 col-md-6">
@@ -114,6 +114,24 @@
               class="sponsor"
               src="{{ get_url(path="/images/" ~ sponsor.image) }}"
               alt="{{ sponsor.alt_text }}">
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row me-auto ms-auto text-center">
+          {{ config.extra.sponsor_about | markdown(inline=false) | safe }}
+        </div>
+      </div>
+    </section>
+
+    <section id="organizers">
+      <div class="container">
+        <h2>Organizers</h2>
+        <div class="row">
+          {% for organizer in config.extra.organizers %}
+          <div class="col">
+            <a href="{{ organizer.url }}">
+              <img class="organizer" src="{{ get_url(path="/images/" ~ organizer.image) }}" alt="{{ organizer.alt_text }}">
             </a>
           </div>
           {% endfor %}
