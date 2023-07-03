@@ -9,6 +9,14 @@
       <div class="banner-title">
         <h1>{{ section.title }}</h1>
         <h2>{{ section.extra.subtitle }}</h2>
+        <br>
+        <h4 class="montserrat">
+          {{ config.extra.when.from | date(format="%b %e") }}
+          -
+          {{ config.extra.when.to | date(format="%e, %Y") }}
+          <br>
+          {{ config.extra.where | last | split(pat=",") | slice(start=1, end=3) | join(sep=", ")}}
+        </h4>
       </div>
       <a class="downward-link" href="#scroll-anchor">
         <i class="fas fa-chevron-down" aria-hidden="true"></i>
@@ -42,11 +50,11 @@
     <section id="registration">
       <div class="container">
         <h2>Registration</h2>
-        <div class="row justify-content-center">
-          <div class="col-lg-6 col-sm-12">
+        <div class="row me-auto ms-auto justify-content-evenly">
+          <div class="col-12 col-md-4">
           {{ config.extra.registration | markdown(inline=false) | safe }}
           </div>
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-12 col-md-6">
             <table class="table">
               <thead>
                 <tr>
@@ -70,8 +78,28 @@
 
     <section id="abstracts-call">
       <div class="container">
-        <h2>Call for abstracts</h2>
-        {{ config.extra.abstracts_call | markdown(inline=false) | safe }}
+        <h2>Call for Abstracts</h2>
+        <div class="row me-auto ms-auto justify-content-evenly">
+          <div class="col-12 col-md-4 text-end">
+            <h4 class="montserrat">
+              Due: September 4, 2023
+              <br><br>
+              <a href="https://github.com/geoscixyz/3dem-7/raw/ljh-revisions/assets/3DEM-latex-template.zip">3DEM-7 Template</a>
+              </h4>
+          </div>
+          <div class="col-12 col-md-6">
+            {{ config.extra.abstracts_call | markdown(inline=false) | safe }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="abstracts-call">
+      <div class="container">
+        <h2>Hohmann-Wannamaker Trust</h2>
+        <div class="row me-auto ms-auto justify-content-evenly">
+          {{ config.extra.hwt_about | markdown(inline=false) | safe }}
+        </div>
       </div>
     </section>
 
@@ -86,6 +114,24 @@
               class="sponsor"
               src="{{ get_url(path="/images/" ~ sponsor.image) }}"
               alt="{{ sponsor.alt_text }}">
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row me-auto ms-auto text-center">
+          {{ config.extra.sponsor_about | markdown(inline=false) | safe }}
+        </div>
+      </div>
+    </section>
+
+    <section id="organizers">
+      <div class="container">
+        <h2>Organizers</h2>
+        <div class="row">
+          {% for organizer in config.extra.organizers %}
+          <div class="col">
+            <a href="{{ organizer.url }}">
+              <img class="organizer" src="{{ get_url(path="/images/" ~ organizer.image) }}" alt="{{ organizer.alt_text }}">
             </a>
           </div>
           {% endfor %}
