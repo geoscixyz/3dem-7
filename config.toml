@@ -70,8 +70,11 @@ Registration link coming soon...
 abstracts_call = """
 Abstracts are due September 4, 2023.
 
-Please use the [template provided](https://github.com/geoscixyz/3dem-7/raw/main/assets/3DEM-latex-template.zip) and name your abstract using the convention `LastName2023-3DEM7.pdf`.
-We recommend a 4 page abstract, however there is no hard limit and longer / shorter abstracts are accepted.
+Please use the {{link(fname="assets/3DEM-latex-template.zip", label="template
+provided")}} and name your abstract using the convention
+`LastName2023-3DEM7.pdf`.
+We recommend a 4 page abstract, however there is no hard limit and longer
+/ shorter abstracts are accepted.
 
 Submit your abstract by email to [3delectromagnetics@gmail.com](mailto:3delectromagnetics@gmail.com).
 In your email, please specify if you have a preference for a talk or poster.
