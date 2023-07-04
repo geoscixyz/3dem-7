@@ -95,11 +95,19 @@
       </div>
     </section>
 
-    <section id="abstracts-call">
+    <section id="hohmann-wannamaker">
       <div class="container">
         <h2>Hohmann-Wannamaker Trust</h2>
         <div class="row me-auto ms-auto justify-content-evenly">
+          <div class="col-12 col-md-3 text-end">
+            <img
+              src="{{ get_url(path="/images/gwhmt.png") }}"
+              alt="Gerald W. Hohmann Memorial Trust"
+            />
+          </div>
+          <div class="col-12 col-md-7">
           {{ config.extra.hwt_about | markdown(inline=false) | safe }}
+          </div>
         </div>
       </div>
     </section>
