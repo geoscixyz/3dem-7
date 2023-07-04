@@ -9,14 +9,13 @@
       <div class="banner-title">
         <h1>{{ section.title }}</h1>
         <h2>{{ section.extra.subtitle }}</h2>
-        <br>
-        <h4 class="montserrat">
+        <h3 class="montserrat">
           {{ config.extra.when.from | date(format="%b %e") }}
           -
           {{ config.extra.when.to | date(format="%e, %Y") }}
           <br>
           {{ config.extra.where | last | split(pat=",") | slice(start=1, end=3) | join(sep=", ")}}
-        </h4>
+        </h3>
       </div>
       <a class="downward-link" href="#scroll-anchor">
         <i class="fas fa-chevron-down" aria-hidden="true"></i>
