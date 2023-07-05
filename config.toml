@@ -68,16 +68,17 @@ Registration link coming soon...
 """
 
 abstracts_call = """
-Abstracts are due September 4, 2023.
-
-Please use the {{link(fname="assets/3DEM-latex-template.zip", label="template
-provided")}} and name your abstract using the convention
-`LastName2023-3DEM7.pdf`.
-We recommend a 4 page abstract, however there is no hard limit and longer
+* Please use the
+    {{
+        link(fname="assets/3DEM-latex-template.zip", label="template provided")
+    }}.
+* **Name your abstract** using the convention `LastName2023-3DEM7.pdf`.
+* We recommend a 4 page abstract, however there is no hard limit and longer
 / shorter abstracts are accepted.
-
-Submit your abstract by email to [3delectromagnetics@gmail.com](mailto:3delectromagnetics@gmail.com).
-In your email, please specify if you have a preference for a talk or poster.
+* Submit your abstract by email to
+[3delectromagnetics@gmail.com](mailto:3delectromagnetics@gmail.com).
+* In your email, please **specify** if you have a preference for a **talk** or
+  **poster**.
 """
 
 hwt_about = """
