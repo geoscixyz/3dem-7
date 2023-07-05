@@ -78,28 +78,52 @@
     <section id="abstracts-call">
       <div class="container">
         <h2>Call for Abstracts</h2>
-        <div class="row me-auto ms-auto justify-content-evenly">
-          <div class="col-12 col-md-4 text-end">
-            <h4 class="montserrat">
-              Due: September 4, 2023
-              <br><br>
-              <a class="btn btn-primary" href="{{ get_url(path="assets/3DEM-latex-template.zip") }}">
+        <div class="row me-auto ms-auto justify-content-evenly gy-4">
+          <div class="col-xxl-4 col-xl-5 col-lg-6 col-sm-12 text-center">
+            <h3>
+              <i class="fa-solid fa-envelope-open-text"></i>
+              Call for abstracts is open!
+            </h3>
+            <div class="alert alert-warning">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              Abstracts are due <strong>September 4, 2023</strong>
+            </div>
+            <div class="">
+              <a
+                class="btn btn-primary"
+                href="{{ get_url(path="assets/3DEM-latex-template.zip") }}"
+              >
                 Download template
               </a>
-              </h4>
+              <a
+                class="btn btn-success"
+                href="mailto:3delectromagnetics@gmail.com"
+              >
+                Submit your abstract
+              </a>
+            </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-xxl-7 col-xl-7 col-lg-6 col-sm-12">
             {{ config.extra.abstracts_call | markdown(inline=false) | safe }}
           </div>
         </div>
       </div>
     </section>
 
-    <section id="abstracts-call">
+    <section id="hohmann-wannamaker">
       <div class="container">
         <h2>Hohmann-Wannamaker Trust</h2>
-        <div class="row me-auto ms-auto justify-content-evenly">
+        <div class="row me-auto ms-auto justify-content-evenly gy-4">
+          <div class="col-md-5 col-sm-12 text-center">
+            <img
+              src="{{ get_url(path="/images/gwhmt.png") }}"
+              alt="Gerald W. Hohmann Memorial Trust"
+              style="width: 100%; max-width: 300px; height: auto"
+            />
+          </div>
+          <div class="col-md-7 col-sm-12">
           {{ config.extra.hwt_about | markdown(inline=false) | safe }}
+          </div>
         </div>
       </div>
     </section>
