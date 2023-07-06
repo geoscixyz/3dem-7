@@ -40,7 +40,7 @@
           </p>
           </div>
           <div class="col-12 col-md-6">
-            {{ config.extra.about | markdown(inline=false) | safe }}
+            {{ section.extra.about | markdown(inline=false) | safe }}
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
         <h2>Registration</h2>
         <div class="row me-auto ms-auto justify-content-evenly">
           <div class="col-12 col-md-4">
-          {{ config.extra.registration | markdown(inline=false) | safe }}
+          {{ section.extra.registration | markdown(inline=false) | safe }}
           </div>
           <div class="col-12 col-md-6">
             <table class="table">
@@ -62,7 +62,7 @@
                 </tr>
               </thead>
               <tbody>
-                {% for registration in config.extra.registrations %}
+                {% for registration in section.extra.registrations %}
                 <tr>
                   <td>{{ registration.type }}</td>
                   <td>{{ registration.fee }}</td>
@@ -104,7 +104,7 @@
             </div>
           </div>
           <div class="col-xxl-7 col-xl-7 col-lg-6 col-sm-12">
-            {{ config.extra.abstracts_call | markdown(inline=false) | safe }}
+            {{ section.extra.abstracts_call | markdown(inline=false) | safe }}
           </div>
         </div>
       </div>
@@ -122,7 +122,7 @@
             />
           </div>
           <div class="order-lg-0 col-lg-7 col-md-12">
-          {{ config.extra.hwt_about | markdown(inline=false) | safe }}
+          {{ section.extra.hwt_about | markdown(inline=false) | safe }}
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@
       <div class="container">
         <h2>Sponsors</h2>
         <div class="row">
-          {% for sponsor in config.extra.sponsors %}
+          {% for sponsor in section.extra.sponsors %}
           <div class="col">
             <a href="{{ sponsor.url }}">
             <img
@@ -144,7 +144,7 @@
           {% endfor %}
         </div>
         <div class="row me-auto ms-auto text-center">
-          {{ config.extra.sponsor_about | markdown(inline=false) | safe }}
+          {{ section.extra.sponsor_about | markdown(inline=false) | safe }}
         </div>
       </div>
     </section>
@@ -153,7 +153,7 @@
       <div class="container">
         <h2>Organizers</h2>
         <div class="row">
-          {% for organizer in config.extra.organizers %}
+          {% for organizer in section.extra.organizers %}
           <div class="col-xl col-lg-6 col-md-6 col-sm-12 gy-4 text-center">
             <a href="{{ organizer.url }}">
               <img class="organizer" src="{{ get_url(path="/images/" ~ organizer.image) }}" alt="{{ organizer.alt_text }}">
