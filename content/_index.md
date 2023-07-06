@@ -40,10 +40,13 @@ Registration link coming soon...
 """
 
 abstracts_call = """
-* Please use the
+* Please use one of the templates provided
+    ({{
+        link(fname="assets/3DEM-latex-template.zip", label="LaTeX")
+    }},
     {{
-        link(fname="assets/3DEM-latex-template.zip", label="template provided")
-    }}.
+        link(fname="assets/3DEM7_template_msword.docx", label="word")
+    }}).
 * **Name your abstract** using the convention `LastName2023-3DEM7.pdf`.
 * We recommend a 4 page abstract, however there is no hard limit and longer
 / shorter abstracts are accepted.
