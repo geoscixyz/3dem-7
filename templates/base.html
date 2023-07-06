@@ -4,11 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% set title = config.title %}
+  {% if section and section.title %}
+    {% set title = title ~ ": " ~ section.title %}
+  {% elif page and page.title %}
+    {% set title = title ~ ": " ~ page.title %}
+  {% endif %}
+  <title>{{ title }}</title>
+
   <link rel="stylesheet" href="{{ get_url(path="bootstrap/css/bootstrap.min.css") }}" media="all" />
   <link rel="stylesheet" href="{{ get_url(path="fontawesome/css/all.min.css") }}" media="all" />
   <link rel="stylesheet" href="{{ get_url(path="style.css") }}" media="all" />
   <link rel="stylesheet" type="text/css" href="{{ get_url(path="fonts/Montserrat/Montserrat.css") }}">
-  <title></title>
 </head>
 
 <body>
