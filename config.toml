@@ -2,7 +2,7 @@
 base_url = "https://geoscixyz.github.io/3dem-7"
 
 # Title of the website
-title = "3DEM"
+title = "3DEM-7"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
