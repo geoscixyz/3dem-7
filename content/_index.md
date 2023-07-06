@@ -1,5 +1,72 @@
 +++
 template = "home.html"
+
+[extra]
+
 title = "3DEM"
-extra.subtitle = "The 7th International Symposium on Three-Dimensional Electromagnetics"
+subtitle = "The 7th International Symposium on Three-Dimensional Electromagnetics"
+
+# Sponsors
+sponsors = [
+]
+
+# Organizers
+organizers = [
+    {image="hwt.png", alt_text="Hohmann-Wannamaker Trust", url="https://www.gwhohmann.org/"},
+    {image="gif.png", alt_text="Geophysical Inversion Facility", url="https://gif.eos.ubc.ca/"},
+    {image="ubc.png", alt_text="University of British Columbia", url="https://www.eoas.ubc.ca/"},
+    {image="bcgs.jpg", alt_text="BC Geophysical Society", url="http://www.bcgsonline.org/"},
+]
+
+# Registration fees
+registrations = [
+    {type="Early bird", fee="$475"},
+    {type="Regular", fee="$600"},
+    {type="Onsight", fee="$650"},
+    {type="Student / postdoc", fee="$100"},
+]
+
+# Text in home page
+about = """
+We are looking forward to welcoming the 3DEM community to Vancouver this year!
+The 3DEM-7 Symposium will be held at the University of British Columbia from
+November 13-15. This will be a great opportunity to share
+new developments and applications in 3DEM, connect with the community,
+and enjoy Vancouver.
+"""
+
+registration = """
+Registration link coming soon...
+"""
+
+abstracts_call = """
+* Please use the template provided
+    ({{
+        link(fname="assets/3DEM-latex-template.zip", label="latex")
+    }},
+    {{
+        link(fname="assets/3DEM7_template_msword.docx", label="word")
+    }}).
+* **Name your abstract** using the convention `LastName2023-3DEM7.pdf`.
+* We recommend a 4 page abstract, however there is no hard limit and longer
+/ shorter abstracts are accepted.
+* Submit your abstract by email to
+[3delectromagnetics@gmail.com](mailto:3delectromagnetics@gmail.com).
+* In your email, please **specify** if you have a preference for a **talk** or
+  **poster**.
+"""
+
+hwt_about = """
+The 3DEM symposium is organized by the [Hohmann-Wannamaker Trust](https://www.gwhohmann.org/).
+The Hohmann-Wannamaker Trust (HWT) was established in December 2022
+as the continuation of the Gerald W. Hohmann Trust for Teaching and
+Research in Electromagnetic Geophysics, following the tragic death of
+trustee Phil Wannamaker on August 22. 3DEM-7 will be
+dedicated to honoring Phil’s legacy in the worldwide EM community as a
+scientist, educator, colleague, and friend.
+"""
+
+sponsor_about = """
+Please reach out to `lheagy@eoas.ubc.ca` and `ehaber@eoas.ubc.ca` if you are interested in sponsoring 3DEM-7.
+"""
 +++
