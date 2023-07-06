@@ -42,7 +42,7 @@ Registration link coming soon...
 abstracts_call = """
 * Please use one of the templates provided
     ({{
-        link(fname="assets/3DEM-latex-template.zip", label="latex")
+        link(fname="assets/3DEM-latex-template.zip", label="LaTeX")
     }},
     {{
         link(fname="assets/3DEM7_template_msword.docx", label="word")
