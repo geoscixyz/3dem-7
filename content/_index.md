@@ -1,9 +1,9 @@
 +++
 template = "home.html"
-title = "3DEM"
 
 [extra]
 
+title = "3DEM"
 subtitle = "The 7th International Symposium on Three-Dimensional Electromagnetics"
 
 # Sponsors
