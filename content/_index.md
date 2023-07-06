@@ -12,7 +12,7 @@ sponsors = [
 
 # Organizers
 organizers = [
-    {image="hwt.jpg", alt_text="Hohmann-Wannamaker Trust", url="https://www.gwhohmann.org/"},
+    {image="hwt.png", alt_text="Hohmann-Wannamaker Trust", url="https://www.gwhohmann.org/"},
     {image="gif.png", alt_text="Geophysical Inversion Facility", url="https://gif.eos.ubc.ca/"},
     {image="ubc.png", alt_text="University of British Columbia", url="https://www.eoas.ubc.ca/"},
     {image="bcgs.jpg", alt_text="BC Geophysical Society", url="http://www.bcgsonline.org/"},
