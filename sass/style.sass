@@ -14,17 +14,10 @@ $blue: #20567a
 $white: #f3f3f3
 
 // Override bootstrap colors
-:root
+:root:not([data-bs-theme=dark])
   --bs-body-color: var(--bs-gray-700)
   --blue: #20567a
 
-
-// :root:not([data-bs-theme=light])
-//   --bs-body-color: red
-//
-// :root:not([data-bs-theme=dark])
-//   --bs-body-color: blue
-//
 
 .navbar
   background-color: $blue
@@ -85,8 +78,8 @@ header.home
 
 main.home
   section
-    padding-top: 2rem
-    padding-bottom: 2rem
+    padding-top: 4rem
+    padding-bottom: 4rem
 
   h2
     text-align: center
@@ -110,10 +103,6 @@ main.home
 
   .dropdown li
     font-size: $font-size-base
-
-  section
-    padding-top: 4rem
-    padding-bottom: 4rem
 
   .background-1
     background-color: $blue
@@ -154,3 +143,11 @@ h1, h2, h3, h4, h5
 
 .gap-2
   gap: 2rem
+
+.hwt
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hwt-background.jpg")
+  background-position: top right
+  background-size: cover
+  padding-top: 8rem !important
+  padding-bottom: 8rem !important
+  color: var(--bs-light-text-emphasis)
