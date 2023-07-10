@@ -9,15 +9,51 @@ extra.show_toc = true
 There are many hotels to choose from in Vancouver. Here are some that are often
 used for invited speakers at EOAS.
 
-**Off campus:**
+### Off campus
 
-- Granville Island Hotel: 1253 Johnston St, Vancouver, BC V6H 3R9
-- Sylvia Hotel: 1154 Gilford St, Vancouver, BC V6G 2P6
+{{
+hotelcard(
+    title="Granville Island Hotel"
+    image="/images/granvilleisland-hotel.jpg"
+    address="1253 Johnston St, Vancouver, BC, V6H 3R9"
+    url="https://granvilleisland.com"
+    btn_label="Book a room"
+)
+}}
 
-**On campus:**
+{{
+hotelcard(
+    title="Sylvia Hotel"
+    image="/images/sylvia-hotel.jpg"
+    address="1154 Gilford St, Vancouver, BC, V6G 2P6"
+    url="https://sylviahotel.com"
+    btn_label="Book a room"
+)
+}}
 
-- Gage Suites: 5959 Student Union Blvd, Vancouver, BC V6T 1K2 - queen bed - $249/night
-- St. John's College: 2111 Lower Mall, Vancouver, BC Canada V6T 1Z4 - double bed - $156/night    queen bed - $179/night
+### On campus
+
+{{
+hotelcard(
+    title="Gage Suites"
+    image="/images/gage-suite.jpg"
+    address="5959 Student Union Blvd, Vancouver, BC, V6T 1K2"
+    url="https://suitesatubc.com/gage-apartments"
+    btn_label="Book a room"
+    prices=["Queen bed: $249 per night."]
+)
+}}
+
+{{
+hotelcard(
+    title="St. John's College"
+    image="/images/stjohns.jpg"
+    address="2111 Lower Mall, Vancouver, BC, V6T 1Z4"
+    url="https://stjohns.ubc.ca/guest-meeting-rooms/guest-accommodations"
+    btn_label="Book a room"
+    prices=["Queen bed: $179 per night.", "Double bed: $156 per night."]
+)
+}}
 
 
 ## Canada Visa
