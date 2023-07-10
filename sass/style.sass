@@ -19,7 +19,7 @@ $white: #f3f3f3
   --blue: #20567a
 
 
-.navbar
+nav.navtop
   background-color: $blue
   .nav-link
     color: $white
@@ -32,15 +32,36 @@ $white: #f3f3f3
     font-size: calc(0.7 * $font-size-base)
     vertical-align: middle
 
+header
+  background-color: $blue
+  color: $white
+  padding-top: 6rem
+  padding-bottom: 4rem
+  margin-bottom: 3rem
+
+main
+  margin-bottom: 4rem
+
+aside > nav
+
+  border-right: solid 2px var(--bs-gray-300)
+
+  .nav-link
+    font-size: $h5-font-size
+    border-bottom: solid 2px transparent
+
+  .nav-link:hover
+    // color: var(--bs-link-hover-color)
+    border-bottom: solid 2px var(--bs-nav-link-hover-color)
+
+
 header.home
   height: 100vh
-  margin-bottom: 4rem
+  padding-top: 0
+  padding-bottom: 0
 
   display: flex
   flex-direction: column
-
-  background-color: $blue
-  color: $white
 
   .banner
     text-align: center
@@ -77,6 +98,8 @@ header.home
 
 
 main.home
+  margin-bottom: 0
+
   section
     padding-top: 4rem
     padding-bottom: 4rem
@@ -134,6 +157,11 @@ h1
 
 h1, h2, h3, h4, h5
   font-family: 'Montserrat', sans-serif
+
+ul + h2, ul + h3, ul + h4, ul + h5,
+ol + h2, ol + h3, ol + h4, ol + h5,
+p + h2, p + h3, p + h4, p + h5
+  margin-top: 1.5em
 
 .montserrat
   font-family: 'Montserrat', sans-serif
