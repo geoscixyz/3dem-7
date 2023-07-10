@@ -58,12 +58,14 @@ abstracts_call = """
 
 hwt_about = """
 The 3DEM symposium is organized by the [Hohmann-Wannamaker Trust](https://www.gwhohmann.org/).
+
 The Hohmann-Wannamaker Trust (HWT) was established in December 2022
 as the continuation of the Gerald W. Hohmann Trust for Teaching and
 Research in Electromagnetic Geophysics, following the tragic death of
-trustee Phil Wannamaker on August 22. 3DEM-7 will be
-dedicated to honoring Phil’s legacy in the worldwide EM community as a
-scientist, educator, colleague, and friend.
+trustee Phil Wannamaker on August 22.
+
+3DEM-7 will be dedicated to honoring Phil’s legacy in the worldwide EM
+community as a scientist, educator, colleague, and friend.
 """
 
 sponsor_about = """
