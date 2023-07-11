@@ -3,9 +3,34 @@
 {% block content %}
   {% include "navbar.html" %}
 
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+
   <main class="container">
 
+  {% if page.extra.show_toc %}
+
+  <div class="row">
+    <aside class="col-xl-3 col-lg-4 d-none d-lg-block">
+      <nav class="navbar flex-column sticky-top">
+        <div class="navbar-nav">
+          {% for h1 in page.toc %}
+          <a class="nav-link" href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+          {% endfor %}
+        </div>
+      </nav>
+    </aside>
+    <div class="col-xl-9 col-lg-8 col-md-12">
+    {{ page.content | safe }}
+    </div>
+  </div>
+
+  {% else %}
+
   {{ page.content | safe }}
+
+  {% endif %}
 
   </main>
 
