@@ -22,7 +22,7 @@ organizers = [
 registrations = [
     {type="Early bird", fee="$475"},
     {type="Regular", fee="$600"},
-    {type="Onsight", fee="$650"},
+    {type="Onsite", fee="$650"},
     {type="Student / postdoc", fee="$100"},
     {type="Retired", fee="$300"},
 ]
