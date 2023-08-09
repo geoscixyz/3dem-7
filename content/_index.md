@@ -12,7 +12,7 @@ sponsors = [
 
 # Organizers
 organizers = [
-    {image="hwt.png", alt_text="Hohmann-Wannamaker Trust", url="https://www.gwhohmann.org/"},
+    {image="hwt.png", alt_text="Hohmann-Wannamaker Trust", url="http://hohmannwannamakertrust.org/"},
     {image="gif.png", alt_text="Geophysical Inversion Facility", url="https://gif.eos.ubc.ca/"},
     {image="ubc.png", alt_text="University of British Columbia", url="https://www.eoas.ubc.ca/"},
     {image="bcgs.jpg", alt_text="BC Geophysical Society", url="http://www.bcgsonline.org/"},
@@ -58,7 +58,7 @@ abstracts_call = """
 """
 
 hwt_about = """
-The 3DEM symposium is organized by the [Hohmann-Wannamaker Trust](https://www.gwhohmann.org/).
+The 3DEM symposium is organized by the [Hohmann-Wannamaker Trust](http://hohmannwannamakertrust.org/).
 
 The Hohmann-Wannamaker Trust (HWT) was established in December 2022
 as the continuation of the Gerald W. Hohmann Trust for Teaching and
