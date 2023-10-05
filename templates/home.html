@@ -50,19 +50,8 @@
       <div class="container">
         <h2>Registration</h2>
         <div class="row me-auto ms-auto justify-content-evenly">
-          <div class="col-12 col-md-4">
-            <h3>
-              <i class="fa-solid fa-user-plus"></i>
-              Registration is open!
-            </h3>
-            <div class="d-flex flex-row align-items-center justify-content-center flex-wrap gap-2">
-              <a
-                  class="btn btn-success btn-lg"
-                  href="https://3dem7.wildapricot.org/event-5372783/Registration"
-                >
-                  Register here
-                </a>
-              </div>
+          <div class="col-12 col-md-4 text-center d-flex flex-column justify-content-center">
+            {{ section.extra.registration | markdown(inline=false) | safe }}
           </div>
           <div class="col-12 col-md-6">
             <table class="table">
