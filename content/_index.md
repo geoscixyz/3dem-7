@@ -38,7 +38,14 @@ and enjoy Vancouver. You can
 """
 
 registration = """
-Registration link coming soon...
+### <i class="fa-solid fa-user-plus"></i> Registration is open!
+
+<a
+  class="btn btn-success btn-lg"
+  href="https://3dem7.wildapricot.org/event-5372783/Registration"
+>
+  Register here
+</a>
 """
 
 abstracts_call = """
