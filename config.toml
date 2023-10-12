@@ -38,6 +38,6 @@ where = [
 [extra.infobar]
 text="""
 <i class="fa-solid fa-circle-info"></i>
-Deadline for [abstract submission](/#abstracts-call) got extended to **October 20**!
+The deadline for [abstract submission](/#abstracts-call) is extended to **October 20**!
 """
 color="warning"
