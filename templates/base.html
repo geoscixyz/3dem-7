@@ -21,6 +21,16 @@
 
 <body>
 
+  {% if config.extra.infobar %}
+    {% set alert_class = "" %}
+    {% if config.extra.infobar.color %}
+      {% set alert_class = "alert-" ~ config.extra.infobar.color %}
+    {% endif %}
+    <div class="infobar alert {{ alert_class }}" role="alert">
+      {{ config.extra.infobar.text | markdown(inline=true) | safe }}
+    </div>
+  {% endif %}
+
   {% block content %} {% endblock %}
 
 <script src="{{ get_url(path="bootstrap/js/bootstrap.bundle.min.js") }}"></script>
