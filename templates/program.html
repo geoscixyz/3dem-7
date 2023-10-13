@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+  {% include "navbar.html" %}
+
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <main class="container">
+
+  {% for day, events in page.extra.events | group_by(attribute="day") %}
+    {% set_global i = 0 %}
+    {% set_global previous_end = "" %}
+
+    <div class="row">
+
+      <div class="col-3">
+        <h2 class="text-center">{{ day | date(format="%A %e") }}</h2>
+      </div>
+
+      <div class="col-9">
+      {% for event in events %}
+
+        {# Check consistency of start and end times #}
+        {% if i != 0 and previous_end != event.from %}
+          {{ throw(message="Inconsistent start time for " ~ "'" ~ event.title ~ "'" ) }}
+        {% endif %}
+        {% set_global previous_end = event.to %}
+
+        {# Transform from and to as timestamps #}
+        {% set from = macros::timestamp(day=event.day, hhmm=event.from) %}
+        {% set to = macros::timestamp(day=event.day, hhmm=event.to) %}
+
+        <div class="program-event">
+          <div class="d-flex flex-row justify-content-between">
+          <h3>{{ event.title }}</h3>
+          <span>
+            {{ from | date(format="%l:%M %P") }} -
+            {{ to | date(format="%l:%M %P") }}
+          </span>
+          </div>
+        </div>
+     {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+
+
+
+
+
+  <div class="row">
+  {% for day, events in page.extra.events | group_by(attribute="day") %}
+    {% set_global i = 0 %}
+    {% set_global previous_end = "" %}
+
+    <div class="col">
+      <h2 class="text-center">{{ day | date(format="%A %e") }}</h2>
+
+      <ul class="timeline">
+      {% for event in events %}
+
+        {# Check consistency of start and end times #}
+        {% if i != 0 and previous_end != event.from %}
+          {{ throw(message="Inconsistent start time for " ~ "'" ~ event.title ~ "'" ) }}
+        {% endif %}
+        {% set_global previous_end = event.to %}
+
+        {# Transform from and to as timestamps #}
+        {% set from = macros::timestamp(day=event.day, hhmm=event.from) %}
+        {% set to = macros::timestamp(day=event.day, hhmm=event.to) %}
+
+        <li>
+          <span>
+            {{ from | date(format="%l:%M %P") }} -
+            {{ to | date(format="%l:%M %P") }}
+          </span>
+          <h3>{{ event.title }}</h3>
+        </li>
+
+
+      {% endfor %}
+      </ul>
+
+    </div>
+
+  {% endfor %}
+
+  </div>
+
+
+
+
+
+  {{ page.content | safe }}
+
+  </main>
+
+  {% include "footer.html" %}
+{% endblock %}
+
