@@ -39,6 +39,9 @@
             </span>
             <div class="timeline-content">
               <h3>{{ event.title }}</h3>
+              {% if event.content %}
+                {{ event.content | markdown | safe }}
+              {% endif %}
             </div>
           </li>
 
