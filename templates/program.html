@@ -20,7 +20,7 @@
 
       <div class="timeline">
         <ul>
-        {% for event in events %}
+        {% for event in events | sort(attribute="from") %}
 
           {# Check consistency of start and end times #}
           {% if i != 0 and previous_end != event.from %}
