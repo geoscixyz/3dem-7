@@ -15,7 +15,7 @@
     {% set_global i = 0 %}
     {% set_global previous_end = "" %}
 
-    <div class="col-lg col-md-6 col-sm-12">
+    <div class="col-xl col-lg-6 col-md-12">
       <h2 class="timeline-day">{{ day | date(format="%A %e") }}</h2>
 
       <div class="timeline">
@@ -39,8 +39,21 @@
             </span>
             <div class="timeline-content">
               <h3>{{ event.title }}</h3>
+              {# Add content #}
               {% if event.content %}
                 {{ event.content | markdown | safe }}
+              {% endif %}
+              {# List talks happening in this event #}
+              {% if event.talks %}
+                <ul class="talks">
+                {% for talk in event.talks %}
+                  <li>
+                    <h4>{{ talk.title }}</h4>
+                    <p>{{ talk.authors }}</p>
+                    <a href="{{ talk.abstract }}" class="btn btn-outline-light">Read abstract</a>
+                  </li>
+                {% endfor %}
+                </ul>
               {% endif %}
             </div>
           </li>
