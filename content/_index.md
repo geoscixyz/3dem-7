@@ -10,7 +10,7 @@ subtitle = "The 7th International Symposium on Three-Dimensional Electromagnetic
 sponsors = [
   {image="dmec.png", alt_text="Decennial Mineral Exploration Conferences", url="https://www.dmec.ca", style="min-height: 70px"},
   {image="condor.png", alt_text="Condor Consulting", url="https://www.condorconsult.com", style="min-height: 100px"},
-  {image="convolution-black.png", alt_text="Convolution Geosciences", url="https://www.convolutions.ca"},
+  {image="convolutions-black.png", alt_text="Convolutions Geosciences", url="https://www.convolutions.ca"},
 ]
 
 # Organizers
