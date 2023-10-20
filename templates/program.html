@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+  {% include "navbar.html" %}
+
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <main class="container">
+
+  <div class="row">
+  {% for day, events in page.extra.events | group_by(attribute="day") %}
+    {% set_global i = 0 %}
+    {% set_global previous_end = "" %}
+
+    <div class="col-xl col-lg-6 col-md-12">
+      <h2 class="timeline-day">{{ day | date(format="%A %e") }}</h2>
+
+      <div class="timeline">
+        <ul>
+        {% for event in events | sort(attribute="from") %}
+
+          {# Check consistency of start and end times #}
+          {% if i != 0 and previous_end != event.from %}
+            {{ throw(message="Inconsistent start time for " ~ "'" ~ event.title ~ "'" ) }}
+          {% endif %}
+          {% set_global previous_end = event.to %}
+
+          {# Transform from and to as timestamps #}
+          {% set from = macros::timestamp(day=event.day, hhmm=event.from) %}
+          {% set to = macros::timestamp(day=event.day, hhmm=event.to) %}
+
+          <li>
+            <span class="timeline-date">
+              {{ from | date(format="%l:%M %P") }} -
+              {{ to | date(format="%l:%M %P") }}
+            </span>
+            <div class="timeline-content">
+              <h3>{{ event.title }}</h3>
+              {# Add content #}
+              {% if event.content %}
+                {{ event.content | markdown | safe }}
+              {% endif %}
+              {# List talks happening in this event #}
+              {% if event.talks %}
+                <ul class="talks">
+                {% for talk in event.talks %}
+                  <li>
+                    <h4>{{ talk.title }}</h4>
+                    <p>{{ talk.authors }}</p>
+                    <a href="{{ talk.abstract }}" class="btn btn-outline-light">Read abstract</a>
+                  </li>
+                {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          </li>
+
+        {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+
+  {% endfor %}
+
+  </div>
+
+  </main>
+
+  {% include "footer.html" %}
+{% endblock %}
+
