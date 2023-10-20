@@ -48,23 +48,6 @@ registration = """
 </a>
 """
 
-abstracts_call = """
-* Please use one of the templates provided
-    ({{
-        link(fname="assets/3DEM-latex-template.zip", label="LaTeX")
-    }},
-    {{
-        link(fname="assets/3DEM7_template_msword.docx", label="word")
-    }}).
-* **Name your abstract** using the convention `LastName2023-3DEM7.pdf`.
-* We recommend a 4 page abstract, however there is no hard limit and longer
-/ shorter abstracts are accepted.
-* Submit your abstract by email to
-[3delectromagnetics@gmail.com](mailto:3delectromagnetics@gmail.com).
-* In your email, please **specify** if you have a preference for a **talk** or
-  **poster**.
-"""
-
 hwt_about = """
 The 3DEM symposium is organized by the [Hohmann-Wannamaker Trust](https://hohmannwannamakertrust.org/).
 
