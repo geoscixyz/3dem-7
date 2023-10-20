@@ -35,9 +35,4 @@ where = [
 # Informational bar on top of pages
 #   * choose boostrap colors (primary, secondary, success, danger, warning, etc
 #   * for not having informational bars, just comment out the following lines
-[extra.infobar]
-text="""
-<i class="fa-solid fa-circle-info"></i>
-The deadline for [abstract submission](/#abstracts-call) is extended to **October 20**!
-"""
-color="warning"
+infobar = {}
