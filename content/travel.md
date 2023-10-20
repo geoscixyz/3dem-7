@@ -1,5 +1,5 @@
 +++
-title = "Information"
+title = "Travel"
 template = "page.html"
 extra.show_toc = true
 +++

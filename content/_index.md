@@ -80,4 +80,9 @@ community as a scientist, educator, colleague, and friend.
 sponsor_about = """
 Please reach out to `lheagy@eoas.ubc.ca` and `ehaber@eoas.ubc.ca` if you are interested in sponsoring 3DEM-7.
 """
+
+more_info = """
+Find more about [accommodation](/travel#accommodation) and [travel
+details](/travel).
+"""
 +++
