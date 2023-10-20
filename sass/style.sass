@@ -204,3 +204,96 @@ p + h2, p + h3, p + h4, p + h5
   text-align: center
   padding-top: 0.7em
   padding-bottom: 0.7em
+
+
+// --------------------------
+// Custom classes for program
+// --------------------------
+
+.timeline-day
+  text-transform: uppercase
+  font-size: $font-size-base * 1.5
+  text-align: left
+
+.timeline
+  padding-bottom: 1em
+
+  h1,h2,h3,h4,h5,h6,p
+    margin-bottom: 0
+
+  h3
+    font-size: $font-size-base * 1.5
+
+  // Configure timeline list
+  > ul
+    list-style-type: none
+    border-left:2px solid var(--bs-dark-border-subtle)
+    padding-left: 18px
+    padding-right: 18px
+    padding-top: 1em
+    margin-left: 6px
+
+    > li
+      position: relative // so pseudoelements are located relative to their li's
+      padding-bottom: 2em
+
+      span.timeline-date
+        color: $white
+        background-color: var(--bs-success)
+        border-radius: 25px 25px
+        padding: 0.4em 1em
+        text-align: center
+
+      .timeline-content
+        margin-top: 0.7em
+        margin-left: 0.5em
+
+    li:last-child
+      padding-bottom: 1em
+
+    li:before
+      position: absolute
+      content: ''
+      width: 10px
+      height: 10px
+      background-color: var(--bs-success)
+      border-radius: 50%
+      left: -23.7px
+      top: 5px
+      transition: .5s
+
+  // Configure list for talks
+  ul.talks
+    list-style-type: none
+    padding-left: 0em
+
+    li
+      margin: 1em 0
+      padding: 1em 1em
+      background-color: $blue
+      color: $white
+      box-shadow: 4px 4px 4px var(--bs-dark)
+
+    li:first-child
+      margin-top: 0.5em
+
+    li:last-child
+      margin-bottom: 0em
+
+    h4
+      font-size: $font-size-base * 1.1
+      margin-bottom: 0.3em
+
+    .btn
+      margin-top: 1em
+
+
+@media (max-width: 992px)
+  .timeline-day
+    text-align: center
+
+  .timeline
+    padding-bottom: 1em
+    display: flex
+    flex-direction: row
+    justify-content: center
