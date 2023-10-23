@@ -8,6 +8,9 @@ subtitle = "The 7th International Symposium on Three-Dimensional Electromagnetic
 
 # Sponsors
 sponsors = [
+  {image="dmec.png", alt_text="Decennial Mineral Exploration Conferences", url="https://www.dmec.ca", style="min-height: 100px"},
+  {image="condor.png", alt_text="Condor Consulting", url="https://www.condorconsult.com", style="min-height: 120px"},
+  {image="convolutions-black.png", alt_text="Convolutions Geosciences", url="https://www.convolutions.ca"},
 ]
 
 # Organizers
@@ -33,7 +36,7 @@ We are looking forward to welcoming the 3DEM community to Vancouver this year!
 The 3DEM-7 Symposium will be held at the University of British Columbia from
 November 13-15. This will be a great opportunity to share
 new developments and applications in 3DEM, connect with the community,
-and enjoy Vancouver. You can
+and [enjoy Vancouver](/travel). You can
 [register here](https://3dem7.wildapricot.org/event-5372783/Registration).
 """
 
@@ -114,6 +117,13 @@ community as a scientist, educator, colleague, and friend.
 """
 
 sponsor_about = """
-Please reach out to `lheagy@eoas.ubc.ca` and `ehaber@eoas.ubc.ca` if you are interested in sponsoring 3DEM-7.
+Please reach out to [lheagy@eoas.ubc.ca](mailto:lheagy@eoas.ubc.ca) and
+[ehaber@eoas.ubc.ca](mailto:ehaber@eoas.ubc.ca) if you are interested in
+sponsoring 3DEM-7.
+"""
+
+more_info = """
+Find more about [accommodation](/travel#accommodation) and [travel
+details](/travel).
 """
 +++

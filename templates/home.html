@@ -177,19 +177,21 @@
     <section id="sponsors">
       <div class="container">
         <h2>Sponsors</h2>
-        <div class="row">
+        <div class="d-flex flex-row flex-wrap gap-5 justify-content-evenly align-items-center mb-5">
           {% for sponsor in section.extra.sponsors %}
-          <div class="col">
-            <a href="{{ sponsor.url }}">
+          <a href="{{ sponsor.url }}" title="{{ sponsor.alt_text }}">
             <img
               class="sponsor"
               src="{{ get_url(path="/images/" ~ sponsor.image) }}"
-              alt="{{ sponsor.alt_text }}">
+              alt="{{ sponsor.alt_text }}"
+              {% if sponsor.style %}
+              style="{{ sponsor.style }}"
+              {% endif %}
+              >
             </a>
-          </div>
           {% endfor %}
         </div>
-        <div class="row me-auto ms-auto text-center">
+        <div class="sponsors-about row me-auto ms-auto text-center">
           {{ section.extra.sponsor_about | markdown(inline=false) | safe }}
         </div>
       </div>
@@ -218,7 +220,7 @@
             <div class="d-flex h-100 flex-column justify-content-evenly row-gap-4">
               <div>
                 <h3><i class="fa-solid fa-calendar"></i> When?</h3>
-                <p class="montserrat">
+                <p>
                   {{ config.extra.when.from | date(format="%B %e") }}
                   to
                   {{ config.extra.when.to | date(format="%e, %Y") }}
@@ -226,11 +228,15 @@
               </div>
               <div>
                 <h3><i class="fa-solid fa-location-dot"></i> Where?</h3>
-                <p class="montserrat">
+                <p>
                 {% for line in config.extra.where %}
                 {{ line }}<br>
                 {% endfor %}
                 </p>
+              </div>
+              <div>
+                <h3><i class="fa-solid fa-circle-info"></i> More information</h3>
+                {{ section.extra.more_info | markdown | safe }}
               </div>
             </div>
           </div>
