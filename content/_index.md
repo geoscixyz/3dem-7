@@ -51,7 +51,7 @@ registration = """
 </a>
 """
 
-abstracts_call = """
+submit_abstract = """
 * Please use one of the templates provided
     ({{
         link(fname="assets/3DEM-latex-template.zip", label="LaTeX")
@@ -62,10 +62,46 @@ abstracts_call = """
 * **Name your abstract** using the convention `LastName2023-3DEM7.pdf`.
 * We recommend a 4 page abstract, however there is no hard limit and longer
 / shorter abstracts are accepted.
-* Submit your abstract by email to
+* Email your abstract to
 [3delectromagnetics@gmail.com](mailto:3delectromagnetics@gmail.com).
-* In your email, please **specify** if you have a preference for a **talk** or
-  **poster**.
+
+
+<div class="d-flex flex-row justify-content-start flex-wrap gap-2">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Download template
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/assets/3DEM-latex-template.zip">
+          LaTeX
+      </a></li>
+      <li><a class="dropdown-item" href="/assets/3DEM7_template_msword.docx">
+          Word
+      </a></li>
+    </ul>
+  </div>
+  <a
+    class="btn btn-success"
+    href="mailto:3delectromagnetics@gmail.com"
+  >
+    Submit your abstract
+  </a>
+</div>
+"""
+
+submit_poster_title = """
+Send an email to
+[3delectromagnetics@gmail.com](mailto:3delectromagnetics@gmail.com) with:
+
+* Poster **title**
+* List of **authors**
+
+<a
+  class="btn btn-success"
+  href="mailto:3delectromagnetics@gmail.com"
+>
+  Submit poster title
+</a>
 """
 
 hwt_about = """
