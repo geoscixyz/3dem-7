@@ -20,6 +20,7 @@ highlight_code = false
 # Extra navlinks
 navlinks = [
     {name="Registration", url="/#registration"},
+    {name="Call for Abstracts", url="/#abstracts-call"},
     {name="HWT homepage", url="https://hohmannwannamakertrust.org/", external=true},
 ]
 
