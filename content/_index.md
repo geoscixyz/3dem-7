@@ -8,6 +8,9 @@ subtitle = "The 7th International Symposium on Three-Dimensional Electromagnetic
 
 # Sponsors
 sponsors = [
+  {image="dmec.png", alt_text="Decennial Mineral Exploration Conferences", url="https://www.dmec.ca", style="min-height: 100px"},
+  {image="condor.png", alt_text="Condor Consulting", url="https://www.condorconsult.com", style="min-height: 120px"},
+  {image="convolutions-black.png", alt_text="Convolutions Geosciences", url="https://www.convolutions.ca"},
 ]
 
 # Organizers
@@ -78,7 +81,9 @@ community as a scientist, educator, colleague, and friend.
 """
 
 sponsor_about = """
-Please reach out to `lheagy@eoas.ubc.ca` and `ehaber@eoas.ubc.ca` if you are interested in sponsoring 3DEM-7.
+Please reach out to [lheagy@eoas.ubc.ca](mailto:lheagy@eoas.ubc.ca) and
+[ehaber@eoas.ubc.ca](mailto:ehaber@eoas.ubc.ca) if you are interested in
+sponsoring 3DEM-7.
 """
 
 more_info = """
