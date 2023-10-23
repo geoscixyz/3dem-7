@@ -36,7 +36,7 @@ We are looking forward to welcoming the 3DEM community to Vancouver this year!
 The 3DEM-7 Symposium will be held at the University of British Columbia from
 November 13-15. This will be a great opportunity to share
 new developments and applications in 3DEM, connect with the community,
-and enjoy Vancouver. You can
+and [enjoy Vancouver](/travel). You can
 [register here](https://3dem7.wildapricot.org/event-5372783/Registration).
 """
 
