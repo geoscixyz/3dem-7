@@ -211,7 +211,10 @@
             href="{{ organizer.url }}"
             title="{{ organizer.alt_text }}"
           >
-            <img class="organizer" src="{{ get_url(path="/images/" ~ organizer.image) }}" alt="{{ organizer.alt_text }}"
+            <img
+              class="organizer"
+              src="{{ get_url(path="/images/" ~ organizer.image) }}"
+              alt="{{ organizer.alt_text }}"
               {% if organizer.width %}
               style="width: {{ organizer.width }}"
               {% endif %}
