@@ -177,15 +177,19 @@
     <section id="sponsors">
       <div class="container">
         <h2>Sponsors</h2>
-        <div class="d-flex flex-row flex-wrap gap-5 justify-content-evenly align-items-center mb-5">
+        <div class="row gy-5 justify-content-evenly align-items-center mb-5">
           {% for sponsor in section.extra.sponsors %}
-          <a href="{{ sponsor.url }}" title="{{ sponsor.alt_text }}">
+          <a
+            class="col-md col-sm-6 col-xs-12 text-center"
+            href="{{ sponsor.url }}"
+            title="{{ sponsor.alt_text }}"
+          >
             <img
               class="sponsor"
               src="{{ get_url(path="/images/" ~ sponsor.image) }}"
               alt="{{ sponsor.alt_text }}"
-              {% if sponsor.style %}
-              style="{{ sponsor.style }}"
+              {% if sponsor.width %}
+              style="width: {{ sponsor.width }}"
               {% endif %}
               >
             </a>
@@ -200,13 +204,22 @@
     <section id="organizers">
       <div class="container">
         <h2>Organizers</h2>
-        <div class="row">
+        <div class="row gy-5 justify-content-evenly align-items-center mb-5">
           {% for organizer in section.extra.organizers %}
-          <div class="col-xl col-lg-6 col-md-6 col-sm-12 gy-4 text-center">
-            <a href="{{ organizer.url }}" title="{{ organizer.alt_text }}">
-              <img class="organizer" src="{{ get_url(path="/images/" ~ organizer.image) }}" alt="{{ organizer.alt_text }}">
-            </a>
-          </div>
+          <a
+            class="col-md col-sm-6 col-xs-12 text-center"
+            href="{{ organizer.url }}"
+            title="{{ organizer.alt_text }}"
+          >
+            <img
+              class="organizer"
+              src="{{ get_url(path="/images/" ~ organizer.image) }}"
+              alt="{{ organizer.alt_text }}"
+              {% if organizer.width %}
+              style="width: {{ organizer.width }}"
+              {% endif %}
+            >
+          </a>
           {% endfor %}
         </div>
       </div>

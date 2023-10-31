@@ -8,17 +8,17 @@ subtitle = "The 7th International Symposium on Three-Dimensional Electromagnetic
 
 # Sponsors
 sponsors = [
-  {image="dmec.png", alt_text="Decennial Mineral Exploration Conferences", url="https://www.dmec.ca", style="min-height: 100px"},
-  {image="condor.png", alt_text="Condor Consulting", url="https://www.condorconsult.com", style="min-height: 120px"},
-  {image="convolutions-black.png", alt_text="Convolutions Geosciences", url="https://www.convolutions.ca"},
+  {image="dmec.png", alt_text="Decennial Mineral Exploration Conferences", url="https://www.dmec.ca", width="70%"},
+  {image="condor.png", alt_text="Condor Consulting", url="https://www.condorconsult.com", width="60%"},
+  {image="convolutions-black.png", alt_text="Convolutions Geosciences", url="https://www.convolutions.ca", width="100%"},
 ]
 
 # Organizers
 organizers = [
-    {image="hwt.png", alt_text="Hohmann-Wannamaker Trust", url="https://hohmannwannamakertrust.org/"},
-    {image="gif.png", alt_text="Geophysical Inversion Facility", url="https://gif.eos.ubc.ca/"},
-    {image="ubc.png", alt_text="University of British Columbia", url="https://www.eoas.ubc.ca/"},
-    {image="bcgs.jpg", alt_text="BC Geophysical Society", url="http://www.bcgsonline.org/"},
+    {image="hwt.png", alt_text="Hohmann-Wannamaker Trust", url="https://hohmannwannamakertrust.org/", width="80%"},
+    {image="gif.png", alt_text="Geophysical Inversion Facility", url="https://gif.eos.ubc.ca/", width="50%"},
+    {image="ubc.png", alt_text="University of British Columbia", url="https://www.eoas.ubc.ca/", width="100%"},
+    {image="bcgs.jpg", alt_text="BC Geophysical Society", url="http://www.bcgsonline.org/", width="60%"},
 ]
 
 # Registration fees
