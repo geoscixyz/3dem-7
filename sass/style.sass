@@ -235,6 +235,8 @@ p + h2, p + h3, p + h4, p + h5
   text-transform: uppercase
   font-size: $font-size-base * 1.9
   text-align: left
+  border-bottom: 1px solid var(--bs-dark-border-subtle)
+  padding-bottom: 0.3em
 
 .timeline
   padding-bottom: 1em
@@ -269,6 +271,11 @@ p + h2, p + h3, p + h4, p + h5
       .timeline-content
         margin-top: 0.7em
         margin-left: 0.5em
+
+        details
+          margin-top: 0.5em
+        summary
+          font-size: $font-size-base * 1.2
 
     li:last-child
       padding-bottom: 1em

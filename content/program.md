@@ -85,7 +85,7 @@ title = "Poster Reception"
 day = "2023-11-13"
 from = "16:15"
 to = "18:30"
-talks = [
+posters = [
     {title="3D inversion of semi-airborne magnetometric resistivity data", authors="Zhongchang Chen and Dikun Yang"},
     {title="Conductivity structure beneath Australia constrained by 3-D inversion of MT Tippers in spherical geometry", authors="Filippo Cicchetti "},
     {title="3D AMT/MT case histories from Brazil", authors="Patricia de Lugão"},

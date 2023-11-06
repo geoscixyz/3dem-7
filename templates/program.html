@@ -10,11 +10,11 @@
 
   <main class="container">
 
-  <ul class="nav nav-pills justify-content-center">
+  <ul class="nav nav-pills justify-content-center" style="margin-bottom: 3em; gap: 1em 0em;">
     {% for day, _ in page.extra.events | group_by(attribute="day") %}
     <li
       class="nav-item border border-primary rounded"
-      style="margin-left: 1em; margin-right: 1em; margin-bottom: 3em;"
+      style="margin-left: 1em; margin-right: 1em;"
     >
       <a class="nav-link" href="#{{ day | date(format="%Y-%m-%d") }}">
         {{ day | date(format="%A %e") }}
@@ -69,6 +69,20 @@
                   </li>
                 {% endfor %}
                 </ul>
+              {% endif %}
+              {# List posters happening in this event #}
+              {% if event.posters %}
+                <details>
+                  <summary>Discover posters</summary>
+                  <ul class="talks">
+                  {% for poster in event.posters %}
+                    <li>
+                      <h4>{{ poster.title }}</h4>
+                      <p>{{ poster.authors }}</p>
+                    </li>
+                  {% endfor %}
+                  </ul>
+                </details>
               {% endif %}
             </div>
           </li>
