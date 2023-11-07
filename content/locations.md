@@ -1,0 +1,70 @@
++++
+title = "Locations"
+template = "page.html"
++++
+
+<div class="row location">
+  <div class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center justify-content-center">
+    <h2>Sessions</h2>
+    <p>
+      ESB 1012
+      <br>
+      Earth Science Building at UBC
+      <br>
+      2207 Main Mall, Vancouver, V6T 1Z4
+    </p>
+    <img class="d-none d-md-block" src="/images/esb.jpg" alt="Photo of Earth Sciences Building (ESB)">
+  </div>
+  <div class="col-md-8 col-sm-12">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.7010658045638!2d-123.25462022301548!3d49.263111672139296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672ca12ae4b37%3A0x3b7384303e09af9b!2sEarth%20Sciences%20Building!5e0!3m2!1ses!2sca!4v1699395969764!5m2!1ses!2sca"
+      width="100%" height="450" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    >
+    </iframe>
+  </div>
+</div>
+
+<div class="row location">
+  <div class="col-md-4 col-sm-12 order-md-2 text-center d-flex flex-column align-items-center justify-content-center">
+    <h2>Ice Breaker</h2>
+    <p>
+      Browns Crafthouse UBC
+      <br>
+      6111 University Blvd Unit 101, Vancouver, V6T 0C7
+    </p>
+    <img class="d-none d-md-block" src="/images/browns.jpg" alt="Photo of Browns Crafthouse UBC">
+  </div>
+  <div class="col-md-8 col-sm-12 order-md-1">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11033.90897735532!2d-123.25760167211054!3d49.263972712320076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486735ba412a56b%3A0xefc97cb7df41fcd0!2sBrowns%20Crafthouse%20UBC!5e0!3m2!1ses!2sca!4v1699395373206!5m2!1ses!2sca"
+      width="100%" height="450" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    >
+    </iframe>
+  </div>
+</div>
+
+<div class="row location">
+  <div class="col-md-4 col-sm-12 text-center d-flex flex-column align-items-center justify-content-center">
+    <h2>Banquet</h2>
+    <p>
+      Cecil Green Park House
+      <br>
+      6251 Cecil Green Park Rd, Vancouver, V6T 1X8
+    </p>
+    <img class="d-none d-md-block" src="/images/cecil-greens-park.jpg" alt="Photo of Cecil Green Park House">
+  </div>
+  <div class="col-md-8 col-sm-12">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8756.939621676403!2d-123.2590767142691!3d49.267797150447336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672b1a4606653%3A0xba00269da2e1e9f0!2sCecil%20Green%20Park%20House!5e0!3m2!1ses!2sca!4v1699395477621!5m2!1ses!2sca"
+      width="100%" height="450" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    >
+    </iframe>
+  </div>
+</div>
+
+
+
+
