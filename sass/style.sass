@@ -231,10 +231,21 @@ p + h2, p + h3, p + h4, p + h5
 // Custom classes for program
 // --------------------------
 
+.program-nav
+
+  .nav-link
+    border-bottom: solid 2px transparent
+
+  .nav-link:hover
+    color: var(--bs-primary)
+    border-bottom: solid 2px var(--bs-primary)
+
 .timeline-day
   text-transform: uppercase
-  font-size: $font-size-base * 1.5
+  font-size: $font-size-base * 1.9
   text-align: left
+  border-bottom: 1px solid var(--bs-dark-border-subtle)
+  padding-bottom: 0.3em
 
 .timeline
   padding-bottom: 1em
@@ -243,10 +254,11 @@ p + h2, p + h3, p + h4, p + h5
     margin-bottom: 0
 
   h3
-    font-size: $font-size-base * 1.5
+    font-size: $font-size-base * 1.4
 
   // Configure timeline list
   > ul
+    width: 100%
     list-style-type: none
     border-left:2px solid var(--bs-dark-border-subtle)
     padding-left: 18px
@@ -262,12 +274,18 @@ p + h2, p + h3, p + h4, p + h5
         color: $white
         background-color: var(--bs-success)
         border-radius: 25px 25px
-        padding: 0.4em 1em
+        padding: 0.4em 0.6em
         text-align: center
+        font-size: $font-size-base * 0.95
 
       .timeline-content
         margin-top: 0.7em
         margin-left: 0.5em
+
+        details
+          margin-top: 0.5em
+        summary
+          font-size: $font-size-base * 1.2
 
     li:last-child
       padding-bottom: 1em
