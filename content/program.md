@@ -26,13 +26,14 @@ title = "Welcome and Introductory Remarks"
 day = "2023-11-13"
 from = "09:00"
 to = "09:30"
-content = "Lindsey Heagy and David Alumbaugh"
+content = "_by Lindsey Heagy and David Alumbaugh_"
 
 [[extra.events]]
 title = "Forward Modelling (part 1)"
 day = "2023-11-13"
 from = "09:30"
 to = "10:30"
+chair = "Dikun Yang"
 talks = [
     {title="FEMALY: A Finite Element MAtlab LibrarY for Electromagnetics", authors="Klaus Spitzer, Jan Blechta, Jana Börner, Ralph-Uwe Börner, Michael Eiermann, Oliver Ernst, and Mathias Scheunert"},
     {title="An adaptive finite element solver for three-dimensional electromagnetic inductions", authors="Jianbo Long"}
@@ -49,6 +50,7 @@ title = "Forward Modelling (part 2)"
 day = "2023-11-13"
 from = "11:00"
 to = "12:00"
+chair = "Evan Um"
 talks = [
     {title="On the Robustness, Efficiency and Scalability of an Iterative Framework in Combination With the Block-Based PREconditioner For Square Blocks PRESB Applied To Controlled-Source Electromagnetic Modelling", authors="Michael Weiss, Thomas Kalscheuer, and Maya Neytcheva"},
     {title="Rapid 3D finite-difference modelling for magnetotellurics based on Reduced Basis Method", authors="Hao Dong and Yijie Cui"},
@@ -65,6 +67,7 @@ title = "Data: Physics & Theory"
 day = "2023-11-13"
 from = "13:30"
 to = "15:00"
+chair = "Klaus Spitzer"
 talks = [
     {title="Understanding problems in old MT data using modern methods", authors="Alan G. Jones, Randall Mackie, and Wolfgang Soyer"},
     {title="Negative transients in central-loop time-domain electromagnetic data: Induced polarization or 3D coupling effect?", authors="Dikun Yang, Ming Cheng, and Qiang Luo"},
@@ -112,6 +115,7 @@ title = "Inversion (part 1)"
 day = "2023-11-14"
 from = "09:00"
 to = "10:30"
+chair = "Toshi Uchida"
 talks = [
     {title="Resolving bottlenecks of 3D controlled-source electromagnetic Gauss-Newton inversion", authors="Anna Avdeeva, Rune Mittet and Ole Martin Pedersen"},
     {title="Surface geometry inversion of TEM data for thin, dipping conductors", authors="Xushan Lu, Colin Farquharson and Peter Lelièvre"},
@@ -129,6 +133,7 @@ title = "Inversion (part 2)"
 day = "2023-11-14"
 from = "11:00"
 to = "12:00"
+chair = "Colin Farquharson"
 talks = [
     {title="Hybrid OCCAM-Conjugate Gradients Inversion Algorithms with Applications to Marine CSEM data", authors="Gary D. Egbert, Naser Meqbel and Paulo Werdt"},
     {title="3D inversion of frequency-domain controlled source electromagnetic data for hydraulic fracturing fluid imaging with the effect of steel casings", authors="Ying Hu, and Dikun Yang"},
@@ -139,6 +144,7 @@ title = "Data Acquisition & Instrumentation (part 1)"
 day = "2023-11-14"
 from = "13:30"
 to = "13:30"
+chair = "Alan Jones"
 talks = [
     {title="A Modeling Assessment of Using Optical Fiber Devices For Electric Field Measurements", authors="David Alumbaugh, Evan Um, Michael T. V. Wylie and Bjorn Paulsson"},
     {title="Copper permalloys for fluxgate magnetometer sensors", authors="B. Barry Narod1, David M. Miles"},
@@ -162,6 +168,7 @@ title = "Data Acquisition & Instrumentation (part 2)"
 day = "2023-11-14"
 from = "15:45"
 to = "17:15"
+chair = "Jean Legault"
 talks = [
     {title="UAV-based semi-airborne CSEM for mineral exploration - 3D joint inversion of scalar and vector magnetometer data", authors="Raphael Rochlitz, Philipp Kotowski, Thomas Günther, and Michael Becken"},
     {title="Enhancing Subsurface Imaging in Mineral Exploration through Optimized large- scale Semi-Airborne Surveys: Synthetic Modelling and field Data", authors="Saeed Nazari, Raphael Rochlitz, and Thomas Günther "},
@@ -181,6 +188,7 @@ title = "Case Studies (part 1)"
 day = "2023-11-15"
 from = "09:30"
 to = "10:30"
+chair = "Patricia de Lugao"
 talks = [
     {title="Comparison of 3D finite-element and finite-difference inversion of magnetotelluric data in Okuaizu geothermal area, northern Japan", authors="Toshihiro Uchida and Yusuke Yamaya"},
     {title="3D inversion of onshore controlled source electromagnetic data in the Kusatsu- Shirane Volcano", authors="Keiichi Ishizu, Yasuo Ogawa, Kuo Hsuan Tseng, Takahiro Kunitomo, Norihiro Kitaoka, Grant Caldwell, Takuto Minami, Sohei Serita, Hiroshi Ichihara, Ted Bertrand, and Wiebke Heise"},
@@ -197,6 +205,7 @@ title = "Case Studies (part 2)"
 day = "2023-11-15"
 from = "11:00"
 to = "12:00"
+chair = "Raphael Rochlitz"
 talks = [
     {title="3D ZTEM Airborne Natural Field EM & Magnetic Inversion and Mineral Targeting Results over the Berg Porphyry Copper Project, near Houston, British Columbia", authors="Jean M. Legault, Karl Kwan, and Shane Ebert"},
     {title="AEM Surveys Applied for Iron Formation Mapping: A Proxy for Iron Ore Exploration", authors="Marco Antonio Couto Junior, Dionisio Uendro Carlos and Raphael Fernandes Prieto"},

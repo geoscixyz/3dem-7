@@ -54,6 +54,14 @@
             </span>
             <div class="timeline-content">
               <h3>{{ event.title }}</h3>
+              {# Add session's chair #}
+              {% if event.chair %}
+              <p>
+                <em>
+                  Chair: {{ event.chair | markdown(inline=true) | safe }}
+                </em>
+              </p>
+              {% endif %}
               {# Add content #}
               {% if event.content %}
                 {{ event.content | markdown | safe }}
