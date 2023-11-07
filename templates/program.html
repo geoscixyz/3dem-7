@@ -10,13 +10,28 @@
 
   <main class="container">
 
-  <div class="row">
+  <nav class="program-nav navbar navbar-expand-md mb-5">
+    <ul class="d-none d-md-flex navbar-nav me-auto mb-2 mb-lg-0">
+      {% for day, _ in page.extra.events | group_by(attribute="day") %}
+      <li class="nav-item">
+        <a class="nav-link active" href="#{{ day | date(format="%Y-%m-%d") }}">
+          {{ day | date(format="%A %e") }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <a class="btn btn-primary" href="/{{ page.extra.pdf }}" role="button">
+      Download program as PDF
+    </a>
+  </nav>
+
+  <div class="row gy-5">
   {% for day, events in page.extra.events | group_by(attribute="day") %}
     {% set_global i = 0 %}
     {% set_global previous_end = "" %}
 
-    <div class="col-xl col-lg-6 col-md-12">
-      <h2 class="timeline-day">{{ day | date(format="%A %e") }}</h2>
+    <div class="col-lg-6 col-md-12">
+      <h2 id={{ day | date(format="%Y-%m-%d") }} class="timeline-day">{{ day | date(format="%A %e") }}</h2>
 
       <div class="timeline">
         <ul>
@@ -39,6 +54,14 @@
             </span>
             <div class="timeline-content">
               <h3>{{ event.title }}</h3>
+              {# Add session's chair #}
+              {% if event.chair %}
+              <p>
+                <em>
+                  Chair: {{ event.chair | markdown(inline=true) | safe }}
+                </em>
+              </p>
+              {% endif %}
               {# Add content #}
               {% if event.content %}
                 {{ event.content | markdown | safe }}
@@ -50,10 +73,26 @@
                   <li>
                     <h4>{{ talk.title }}</h4>
                     <p>{{ talk.authors }}</p>
+                    {% if talk.abstract %}
                     <a href="{{ talk.abstract }}" class="btn btn-outline-light">Read abstract</a>
+                    {% endif %}
                   </li>
                 {% endfor %}
                 </ul>
+              {% endif %}
+              {# List posters happening in this event #}
+              {% if event.posters %}
+                <details>
+                  <summary>Discover posters</summary>
+                  <ul class="talks">
+                  {% for poster in event.posters %}
+                    <li>
+                      <h4>{{ poster.title }}</h4>
+                      <p>{{ poster.authors }}</p>
+                    </li>
+                  {% endfor %}
+                  </ul>
+                </details>
               {% endif %}
             </div>
           </li>
