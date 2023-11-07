@@ -11,7 +11,7 @@
   <main class="container">
 
   <nav class="program-nav navbar navbar-expand-md mb-5">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <ul class="d-none d-md-flex navbar-nav me-auto mb-2 mb-lg-0">
       {% for day, _ in page.extra.events | group_by(attribute="day") %}
       <li class="nav-item">
         <a class="nav-link active" href="#{{ day | date(format="%Y-%m-%d") }}">
@@ -21,7 +21,7 @@
       {% endfor %}
     </ul>
     <a class="btn btn-primary" href="/{{ page.extra.pdf }}" role="button">
-      Download as PDF
+      Download program as PDF
     </a>
   </nav>
 
