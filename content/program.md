@@ -2,6 +2,9 @@
 title = "Program"
 template = "program.html"
 
+[extra]
+pdf = "3DEM-7-program.pdf"
+
 # Sunday
 [[extra.events]]
 title = "Informal gathering at Browns Crafthouse UBC"
