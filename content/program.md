@@ -101,7 +101,7 @@ posters = [
     {title="DESMEX - Evolution of Semi-airborne Controlled-source Electromagnetics for Mineral Exploration and Beyond", authors="The DESMEX Team"},
     {title="3D Casing-Source Electromagnetic Modeling for CO2 Plumes and Enhanced Geothermal Systems Monitoring", authors="Evan Schankee Um and David L. Alumbaugh"},
     {title="Petrophysically constrained joint inversion of multi-physical data using the extended alternting direction method of multipliers", authors="Ke Wang, Dikun Yang"},
-    {title="Comparison of MVI with sparse norm susceptibility inversion accounting for demagnetization", authors="John M. Weis, Lindsey J. Heagy, and Douglas W. Oldenburg"},
+    # {title="Comparison of MVI with sparse norm susceptibility inversion accounting for demagnetization", authors="John M. Weis, Lindsey J. Heagy, and Douglas W. Oldenburg"},
     {title="Reparametrizing the Geophysical Inverse Problem using a Convolutional Neural Network", authors="Anran Xu and Lindsey Heagy"},
 ]
 
