@@ -13,6 +13,7 @@ sponsors = [
   {image="convolutions-black.png", alt_text="Convolutions Geosciences", url="https://www.convolutions.ca", width="100%"},
   {image="bhp.png", alt_text="BlueGreen Geophysics", url="https://www.bhp.com", width="50%"},
   {image="bgg.png", alt_text="BHP", url="https://www.bluegreengeophysics.com/", width="90%"},
+  {image="geotech.png", alt_text="Geotech", url="https://geotech.ca/", width="90%"},
 ]
 
 # Organizers
