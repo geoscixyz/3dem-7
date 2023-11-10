@@ -83,7 +83,7 @@ to = "15:30"
 [[extra.events]]
 title = "Poster Lightning Talks"
 day = "2023-11-13"
-from = "15:00"
+from = "15:30"
 to = "16:15"
 
 [[extra.events]]
