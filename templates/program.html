@@ -20,9 +20,14 @@
       </li>
       {% endfor %}
     </ul>
-    <a class="btn btn-primary" href="/{{ page.extra.pdf }}" role="button">
-      Download program as PDF
-    </a>
+    <div class="gx-5">
+      <a class="btn btn-primary" href="/{{ page.extra.proceedings }}" role="button">
+        Download all proceedings
+      </a>
+      <a class="btn btn-primary" href="/{{ page.extra.pdf }}" role="button">
+        Download program
+      </a>
+    </div>
   </nav>
 
   <div class="row gy-5">
@@ -76,7 +81,7 @@
                     <h4>{{ talk.title }}</h4>
                     <p>{{ talk.authors }}</p>
                     {% if talk.abstract %}
-                    <a href="{{ talk.abstract }}" class="btn btn-outline-light">Read abstract</a>
+                    <a href="/abstracts/{{ talk.abstract }}" class="btn btn-outline-light">Read abstract</a>
                     {% endif %}
                   </li>
                 {% endfor %}
@@ -91,6 +96,9 @@
                     <li>
                       <h4>{{ poster.title }}</h4>
                       <p>{{ poster.authors }}</p>
+                      {% if poster.abstract %}
+                      <a href="/abstracts/{{ poster.abstract }}" class="btn btn-outline-light">Read abstract</a>
+                      {% endif %}
                     </li>
                   {% endfor %}
                   </ul>

@@ -4,6 +4,7 @@ template = "program.html"
 
 [extra]
 pdf = "3DEM-7-program.pdf"
+proceedings = "3DEM-7-proceedings.pdf"
 
 # Sunday
 [[extra.events]]
@@ -35,8 +36,8 @@ from = "09:30"
 to = "10:30"
 chair = "Dikun Yang"
 talks = [
-    {title="FEMALY: A Finite Element MAtlab LibrarY for Electromagnetics", authors="Klaus Spitzer, Jan Blechta, Jana Börner, Ralph-Uwe Börner, Michael Eiermann, Oliver Ernst, and Mathias Scheunert"},
-    {title="An adaptive finite element solver for three-dimensional electromagnetic inductions", authors="Jianbo Long"}
+    {title="FEMALY: A Finite Element MAtlab LibrarY for Electromagnetics", authors="Klaus Spitzer, Jan Blechta, Jana Börner, Ralph-Uwe Börner, Michael Eiermann, Oliver Ernst, and Mathias Scheunert", abstract="Spitzer et al 2023_3dem7.pdf"},
+    {title="An adaptive finite element solver for three-dimensional electromagnetic inductions", authors="Jianbo Long", abstract="Long2023_3DEM7.pdf"}
 ]
 
 [[extra.events]]
@@ -52,8 +53,8 @@ from = "11:00"
 to = "12:00"
 chair = "Evan Um"
 talks = [
-    {title="On the Robustness, Efficiency and Scalability of an Iterative Framework in Combination With the Block-Based PREconditioner For Square Blocks PRESB Applied To Controlled-Source Electromagnetic Modelling", authors="Michael Weiss, Thomas Kalscheuer, and Maya Neytcheva"},
-    {title="Rapid 3D finite-difference modelling for magnetotellurics based on Reduced Basis Method", authors="Hao Dong and Yijie Cui"},
+    {title="On the Robustness, Efficiency and Scalability of an Iterative Framework in Combination With the Block-Based PREconditioner For Square Blocks PRESB Applied To Controlled-Source Electromagnetic Modelling", authors="Michael Weiss, Thomas Kalscheuer, and Maya Neytcheva", abstract="Weiss2023-3DEM7.pdf"},
+    {title="Rapid 3D finite-difference modelling for magnetotellurics based on Reduced Basis Method", authors="Hao Dong and Yijie Cui", abstract="Dong_etal_3DEM7.pdf"},
 ]
 
 [[extra.events]]
@@ -69,9 +70,9 @@ from = "13:30"
 to = "15:00"
 chair = "Klaus Spitzer"
 talks = [
-    {title="Understanding problems in old MT data using modern methods", authors="Alan G. Jones, Randall Mackie, and Wolfgang Soyer"},
-    {title="Negative transients in central-loop time-domain electromagnetic data: Induced polarization or 3D coupling effect?", authors="Dikun Yang, Ming Cheng, and Qiang Luo"},
-    {title="Impacts of magnetic permeability on electromagnetic data collected in settings with steel-cased wells", authors="Lindsey J. Heagy and Douglas W. Oldenburg"},
+    {title="Understanding problems in old MT data using modern methods", authors="Alan G. Jones, Randall Mackie, and Wolfgang Soyer", abstract="Jones2023_3DEM7.pdf"},
+    {title="Negative transients in central-loop time-domain electromagnetic data: Induced polarization or 3D coupling effect?", authors="Dikun Yang, Ming Cheng, and Qiang Luo", abstract="Yang2023-3DEM7.pdf"},
+    {title="Impacts of magnetic permeability on electromagnetic data collected in settings with steel-cased wells", authors="Lindsey J. Heagy and Douglas W. Oldenburg", abstract="Heagy-2023-3DEM-7.pdf"},
 ]
 
 [[extra.events]]
@@ -99,13 +100,13 @@ posters = [
     {title="Targeting epithermal Au-Ag using helicopter VTEM 1D resistivity and 3D magnetic inversion results, and radiometric data at Lawyers Project, North-Central BC, Canada", authors="Karl Kwan, Jean Legault, Jim Greig, Ewan Webster and Mark Hanki"},
     {title="A parallel adaptive finite-element method for 3-D large-scale controlled-source electromagnetic forward modelling with hierarchical tetrahedral grids", authors="Z. Liu, Z. Ren, H. Uao, J. Tang, X. Lu, and C.G. Farquharson"},
     {title="Fast 3D magnetotelluric forward modeling using survey decomposition", authors="Lian Liu, Dikun Yang"},
-    {title="Using convolutional neural networks to classify UXO with multicomponent electromagnetic induction data", authors="Jorge Lopez-Alvis, Lindsey J. Heagy, Douglas W. Oldenburg, Stephen Billings and Lin-Ping Song"},
+    {title="Using convolutional neural networks to classify UXO with multicomponent electromagnetic induction data", authors="Jorge Lopez-Alvis, Lindsey J. Heagy, Douglas W. Oldenburg, Stephen Billings and Lin-Ping Song", abstract="LopezAlvisJorge2023-3DEM7.pdf"},
     {title="2.5D Inversion of frequency-domain Land CSEM data using Broyden's method", authors="Ali Mohand-Saïd"},
     {title="DESMEX - Evolution of Semi-airborne Controlled-source Electromagnetics for Mineral Exploration and Beyond", authors="The DESMEX Team"},
-    {title="3D Casing-Source Electromagnetic Modeling for CO2 Plumes and Enhanced Geothermal Systems Monitoring", authors="Evan Schankee Um and David L. Alumbaugh"},
+    {title="3D Casing-Source Electromagnetic Modeling for CO2 Plumes and Enhanced Geothermal Systems Monitoring", authors="Evan Schankee Um and David L. Alumbaugh", abstract="Um2023-3DEM7.pdf"},
     {title="Petrophysically constrained joint inversion of multi-physical data using the extended alternting direction method of multipliers", authors="Ke Wang, Dikun Yang"},
     # {title="Comparison of MVI with sparse norm susceptibility inversion accounting for demagnetization", authors="John M. Weis, Lindsey J. Heagy, and Douglas W. Oldenburg"},
-    {title="Reparametrizing the Geophysical Inverse Problem using a Convolutional Neural Network", authors="Anran Xu and Lindsey Heagy"},
+    {title="Reparametrizing the Geophysical Inverse Problem using a Convolutional Neural Network", authors="Anran Xu and Lindsey Heagy", abstract="XuAnran2023-3DEM7.pdf"},
 ]
 
 # Tuesday
@@ -117,9 +118,9 @@ from = "09:00"
 to = "10:30"
 chair = "Toshi Uchida"
 talks = [
-    {title="Resolving bottlenecks of 3D controlled-source electromagnetic Gauss-Newton inversion", authors="Anna Avdeeva, Rune Mittet and Ole Martin Pedersen"},
-    {title="Surface geometry inversion of TEM data for thin, dipping conductors", authors="Xushan Lu, Colin Farquharson and Peter Lelièvre"},
-    {title="Including geological orientation information into geophysical inversions with unstructured tetrahedral meshes", authors="Mitra Kangazian, and Colin G. Farquharson"},
+    {title="Resolving bottlenecks of 3D controlled-source electromagnetic Gauss-Newton inversion", authors="Anna Avdeeva, Rune Mittet and Ole Martin Pedersen", abstract="Avdeeva2023-3DEM7.pdf"},
+    {title="Surface geometry inversion of TEM data for thin, dipping conductors", authors="Xushan Lu, Colin Farquharson and Peter Lelièvre", abstract="Lu2023-3DEM7.pdf"},
+    {title="Including geological orientation information into geophysical inversions with unstructured tetrahedral meshes", authors="Mitra Kangazian, and Colin G. Farquharson", abstract="Kangazian_Farquharson2023-3DEM7.pdf"},
 ]
 
 [[extra.events]]
@@ -135,8 +136,8 @@ from = "11:00"
 to = "12:00"
 chair = "Colin Farquharson"
 talks = [
-    {title="Hybrid OCCAM-Conjugate Gradients Inversion Algorithms with Applications to Marine CSEM data", authors="Gary D. Egbert, Naser Meqbel and Paulo Werdt"},
-    {title="3D inversion of frequency-domain controlled source electromagnetic data for hydraulic fracturing fluid imaging with the effect of steel casings", authors="Ying Hu, and Dikun Yang"},
+    {title="Hybrid OCCAM-Conjugate Gradients Inversion Algorithms with Applications to Marine CSEM data", authors="Gary D. Egbert, Naser Meqbel and Paulo Werdt", abstract="Egbert2023-3DEM7.pdf"},
+    {title="3D inversion of frequency-domain controlled source electromagnetic data for hydraulic fracturing fluid imaging with the effect of steel casings", authors="Ying Hu, and Dikun Yang", abstract="Hu2023-3DEM7.pdf"},
 ]
 
 [[extra.events]]
@@ -146,9 +147,9 @@ from = "13:30"
 to = "13:30"
 chair = "Alan Jones"
 talks = [
-    {title="A Modeling Assessment of Using Optical Fiber Devices For Electric Field Measurements", authors="David Alumbaugh, Evan Um, Michael T. V. Wylie and Bjorn Paulsson"},
-    {title="Copper permalloys for fluxgate magnetometer sensors", authors="B. Barry Narod1, David M. Miles"},
-    {title="Interferographic TEM Beamforming Resolution", authors="Bryan James, Kyubo Noh, Andrei Swidinsky, Johannes Stoll, and Daryl Ball"},
+    {title="A Modeling Assessment of Using Optical Fiber Devices For Electric Field Measurements", authors="David Alumbaugh, Evan Um, Michael T. V. Wylie and Bjorn Paulsson", abstract="Alumbaugh2023-3DEM7.pdf"},
+    {title="Copper permalloys for fluxgate magnetometer sensors", authors="B. Barry Narod, David M. Miles", abstract="Narod2023-3DEM7.pdf"},
+    {title="Interferographic TEM Beamforming Resolution", authors="Bryan James, Kyubo Noh, Andrei Swidinsky, Johannes Stoll, and Daryl Ball", abstract="James2023-3DEM7.pdf"},
 ]
 
 [[extra.events]]
@@ -170,9 +171,9 @@ from = "15:45"
 to = "17:15"
 chair = "Jean Legault"
 talks = [
-    {title="UAV-based semi-airborne CSEM for mineral exploration - 3D joint inversion of scalar and vector magnetometer data", authors="Raphael Rochlitz, Philipp Kotowski, Thomas Günther, and Michael Becken"},
-    {title="Enhancing Subsurface Imaging in Mineral Exploration through Optimized large- scale Semi-Airborne Surveys: Synthetic Modelling and field Data", authors="Saeed Nazari, Raphael Rochlitz, and Thomas Günther "},
-    {title="Airborne Natural Source Electromagnetics Using an Arbitrary Base Station", authors="Devin C. Cowan, Lindsey J. Heagy and Douglas W. Oldenburg"},
+    {title="UAV-based semi-airborne CSEM for mineral exploration - 3D joint inversion of scalar and vector magnetometer data", authors="Raphael Rochlitz, Philipp Kotowski, Thomas Günther, and Michael Becken", abstract="Rochlitz2023-3DEM7.pdf"},
+    {title="Enhancing Subsurface Imaging in Mineral Exploration through Optimized large- scale Semi-Airborne Surveys: Synthetic Modelling and field Data", authors="Saeed Nazari, Raphael Rochlitz, and Thomas Günther", abstract="Nazari2023-3DEM7.pdf"},
+    {title="Airborne Natural Source Electromagnetics Using an Arbitrary Base Station", authors="Devin C. Cowan, Lindsey J. Heagy and Douglas W. Oldenburg", abstract="Cowan2023-3DEM7.pdf"},
 ]
 
 [[extra.events]]
@@ -190,8 +191,8 @@ from = "09:30"
 to = "10:30"
 chair = "Patricia de Lugao"
 talks = [
-    {title="Comparison of 3D finite-element and finite-difference inversion of magnetotelluric data in Okuaizu geothermal area, northern Japan", authors="Toshihiro Uchida and Yusuke Yamaya"},
-    {title="3D inversion of onshore controlled source electromagnetic data in the Kusatsu- Shirane Volcano", authors="Keiichi Ishizu, Yasuo Ogawa, Kuo Hsuan Tseng, Takahiro Kunitomo, Norihiro Kitaoka, Grant Caldwell, Takuto Minami, Sohei Serita, Hiroshi Ichihara, Ted Bertrand, and Wiebke Heise"},
+    {title="Comparison of 3D finite-element and finite-difference inversion of magnetotelluric data in Okuaizu geothermal area, northern Japan", authors="Toshihiro Uchida and Yusuke Yamaya", abstract="Uchida_3dem7.pdf"},
+    {title="3D inversion of onshore controlled source electromagnetic data in the Kusatsu- Shirane Volcano", authors="Keiichi Ishizu, Yasuo Ogawa, Kuo Hsuan Tseng, Takahiro Kunitomo, Norihiro Kitaoka, Grant Caldwell, Takuto Minami, Sohei Serita, Hiroshi Ichihara, Ted Bertrand, and Wiebke Heise", abstract="Ishizu2023-3DEM7.pdf"},
 ]
 
 [[extra.events]]
@@ -207,8 +208,8 @@ from = "11:00"
 to = "12:00"
 chair = "Raphael Rochlitz"
 talks = [
-    {title="3D ZTEM Airborne Natural Field EM & Magnetic Inversion and Mineral Targeting Results over the Berg Porphyry Copper Project, near Houston, British Columbia", authors="Jean M. Legault, Karl Kwan, and Shane Ebert"},
-    {title="AEM Surveys Applied for Iron Formation Mapping: A Proxy for Iron Ore Exploration", authors="Marco Antonio Couto Junior, Dionisio Uendro Carlos and Raphael Fernandes Prieto"},
+    {title="3D ZTEM Airborne Natural Field EM & Magnetic Inversion and Mineral Targeting Results over the Berg Porphyry Copper Project, near Houston, British Columbia", authors="Jean M. Legault, Karl Kwan, and Shane Ebert", abstract="Legault-Kwan2023-3DEM7.pdf"},
+    {title="AEM Surveys Applied for Iron Formation Mapping: A Proxy for Iron Ore Exploration", authors="Marco Antonio Couto Junior, Dionisio Uendro Carlos and Raphael Fernandes Prieto", abstract="Couto2023_3DEM7.pdf"},
 ]
 
 [[extra.events]]
