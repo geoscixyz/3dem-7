@@ -4,6 +4,7 @@ template = "program.html"
 
 [extra]
 pdf = "3DEM-7-program.pdf"
+proceedings = "3DEM-7-proceedings.pdf"
 
 # Sunday
 [[extra.events]]
