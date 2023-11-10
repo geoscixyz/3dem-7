@@ -77,7 +77,7 @@
                     <h4>{{ talk.title }}</h4>
                     <p>{{ talk.authors }}</p>
                     {% if talk.abstract %}
-                    <a href="{{ talk.abstract }}" class="btn btn-outline-light">Read abstract</a>
+                    <a href="/abstracts/{{ talk.abstract }}" class="btn btn-outline-light">Read abstract</a>
                     {% endif %}
                   </li>
                 {% endfor %}
@@ -92,6 +92,9 @@
                     <li>
                       <h4>{{ poster.title }}</h4>
                       <p>{{ poster.authors }}</p>
+                      {% if poster.abstract %}
+                      <a href="/abstracts/{{ poster.abstract }}" class="btn btn-outline-light">Read abstract</a>
+                      {% endif %}
                     </li>
                   {% endfor %}
                   </ul>
