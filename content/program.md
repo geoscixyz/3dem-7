@@ -144,7 +144,7 @@ talks = [
 title = "Data Acquisition & Instrumentation (part 1)"
 day = "2023-11-14"
 from = "13:30"
-to = "13:30"
+to = "15:00"
 chair = "Alan Jones"
 talks = [
     {title="A Modeling Assessment of Using Optical Fiber Devices For Electric Field Measurements", authors="David Alumbaugh, Evan Um, Michael T. V. Wylie and Bjorn Paulsson", abstract="Alumbaugh2023-3DEM7.pdf"},
