@@ -54,6 +54,7 @@ registration = """
 </a>
 """
 
+enable_call_for_abstracts = false
 submit_abstract = """
 * Please use one of the templates provided
     ({{
