@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://3dem-7.geosci.xyz/sitemap.xml
