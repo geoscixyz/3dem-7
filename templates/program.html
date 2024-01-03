@@ -83,6 +83,9 @@
                     {% if talk.abstract %}
                     <a href="/abstracts/{{ talk.abstract }}" class="btn btn-outline-light">Read abstract</a>
                     {% endif %}
+                    {% if talk.slides %}
+                    <a href="/presentations/{{ talk.slides }}" class="btn btn-outline-light">Download slides</a>
+                    {% endif %}
                   </li>
                 {% endfor %}
                 </ul>
