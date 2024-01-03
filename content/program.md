@@ -36,7 +36,7 @@ from = "09:30"
 to = "10:30"
 chair = "Dikun Yang"
 talks = [
-    {title="FEMALY: A Finite Element MAtlab LibrarY for Electromagnetics", authors="Klaus Spitzer, Jan Blechta, Jana Börner, Ralph-Uwe Börner, Michael Eiermann, Oliver Ernst, and Mathias Scheunert", abstract="Spitzer et al 2023_3dem7.pdf"},
+    {title="FEMALY: A Finite Element MAtlab LibrarY for Electromagnetics", authors="Klaus Spitzer, Jan Blechta, Jana Börner, Ralph-Uwe Börner, Michael Eiermann, Oliver Ernst, and Mathias Scheunert", abstract="Spitzer et al 2023_3dem7.pdf", slides="Spitzer-et-al-2023.pdf"},
     {title="An adaptive finite element solver for three-dimensional electromagnetic inductions", authors="Jianbo Long", abstract="Long2023_3DEM7.pdf"}
 ]
 
@@ -72,7 +72,7 @@ chair = "Klaus Spitzer"
 talks = [
     {title="Understanding problems in old MT data using modern methods", authors="Alan G. Jones, Randall Mackie, and Wolfgang Soyer", abstract="Jones2023_3DEM7.pdf"},
     {title="Negative transients in central-loop time-domain electromagnetic data: Induced polarization or 3D coupling effect?", authors="Dikun Yang, Ming Cheng, and Qiang Luo", abstract="Yang2023-3DEM7.pdf"},
-    {title="Impacts of magnetic permeability on electromagnetic data collected in settings with steel-cased wells", authors="Lindsey J. Heagy and Douglas W. Oldenburg", abstract="Heagy-2023-3DEM-7.pdf"},
+    {title="Impacts of magnetic permeability on electromagnetic data collected in settings with steel-cased wells", authors="Lindsey J. Heagy and Douglas W. Oldenburg", abstract="Heagy-2023-3DEM-7.pdf", slides="Heagy-3DEM-7.pdf"},
 ]
 
 [[extra.events]]
@@ -118,7 +118,7 @@ from = "09:00"
 to = "10:30"
 chair = "Toshi Uchida"
 talks = [
-    {title="Resolving bottlenecks of 3D controlled-source electromagnetic Gauss-Newton inversion", authors="Anna Avdeeva, Rune Mittet and Ole Martin Pedersen", abstract="Avdeeva2023-3DEM7.pdf"},
+    {title="Resolving bottlenecks of 3D controlled-source electromagnetic Gauss-Newton inversion", authors="Anna Avdeeva, Rune Mittet and Ole Martin Pedersen", abstract="Avdeeva2023-3DEM7.pdf", slides="Avdeeva_etal_talk_3DEM7.pdf"},
     {title="Surface geometry inversion of TEM data for thin, dipping conductors", authors="Xushan Lu, Colin Farquharson and Peter Lelièvre", abstract="Lu2023-3DEM7.pdf"},
     {title="Including geological orientation information into geophysical inversions with unstructured tetrahedral meshes", authors="Mitra Kangazian, and Colin G. Farquharson", abstract="Kangazian_Farquharson2023-3DEM7.pdf"},
 ]
@@ -173,7 +173,7 @@ chair = "Jean Legault"
 talks = [
     {title="UAV-based semi-airborne CSEM for mineral exploration - 3D joint inversion of scalar and vector magnetometer data", authors="Raphael Rochlitz, Philipp Kotowski, Thomas Günther, and Michael Becken", abstract="Rochlitz2023-3DEM7.pdf"},
     {title="Enhancing Subsurface Imaging in Mineral Exploration through Optimized large- scale Semi-Airborne Surveys: Synthetic Modelling and field Data", authors="Saeed Nazari, Raphael Rochlitz, and Thomas Günther", abstract="Nazari2023-3DEM7.pdf"},
-    {title="Airborne Natural Source Electromagnetics Using an Arbitrary Base Station", authors="Devin C. Cowan, Lindsey J. Heagy and Douglas W. Oldenburg", abstract="Cowan2023-3DEM7.pdf"},
+    {title="Airborne Natural Source Electromagnetics Using an Arbitrary Base Station", authors="Devin C. Cowan, Lindsey J. Heagy and Douglas W. Oldenburg", abstract="Cowan2023-3DEM7.pdf", slides="Cowan-3DEM-7.pdf"},
 ]
 
 [[extra.events]]
@@ -209,7 +209,7 @@ to = "12:00"
 chair = "Raphael Rochlitz"
 talks = [
     {title="3D ZTEM Airborne Natural Field EM & Magnetic Inversion and Mineral Targeting Results over the Berg Porphyry Copper Project, near Houston, British Columbia", authors="Jean M. Legault, Karl Kwan, and Shane Ebert", abstract="Legault-Kwan2023-3DEM7.pdf"},
-    {title="AEM Surveys Applied for Iron Formation Mapping: A Proxy for Iron Ore Exploration", authors="Marco Antonio Couto Junior, Dionisio Uendro Carlos and Raphael Fernandes Prieto", abstract="Couto2023_3DEM7.pdf"},
+    {title="AEM Surveys Applied for Iron Formation Mapping: A Proxy for Iron Ore Exploration", authors="Marco Antonio Couto Junior, Dionisio Uendro Carlos and Raphael Fernandes Prieto", abstract="Couto2023_3DEM7.pdf", slides="Couto-3DEM-7.pdf"},
 ]
 
 [[extra.events]]
